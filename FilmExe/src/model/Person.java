@@ -14,6 +14,15 @@ public class Person {
 	private String adress;
 	private String email;
 
+	public Person(String cc, String name, String lastName, String phone, String adress, String email) {
+		this.cc = cc;
+		this.name = name;
+		this.lastName = lastName;
+		this.phone = phone;
+		this.adress = adress;
+		this.email = email;
+	}
+
 	public Person(int id, String cc, String name, String lastName, String phone, String adress, String email) {
 		this.id = id;
 		this.cc = cc;

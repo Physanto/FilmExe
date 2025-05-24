@@ -17,7 +17,6 @@ public class ConnectionBD {
 			connection = DriverManager.getConnection(url, user, password);
 
 			if (connection != null) {
-
 				System.out.println("Conexión a base de "
 						+ "datos " + bd + " OK");
 			}

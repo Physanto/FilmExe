@@ -10,8 +10,11 @@ import database.ExecuteSql;
 public class PersonDAO{
 
 	private String sql;
+	private ExecuteSql executeSql;
 
-	public PersonDAO(){}
+	public PersonDAO(){
+		executeSql = new ExecuteSql();
+	}
 
 	/**
 	 * method that is responsible insert person the database
@@ -20,12 +23,24 @@ public class PersonDAO{
 	 */	
 	public boolean insertPerson(Person person){	
 
-		ExecuteSql executeSql = new ExecuteSql();
 		sql = "INSERT INTO person ("
 				+ "cc, name, last_name, phone, adress, email) VALUES ("
 				+ "'"+person.getCc()+"', '"+person.getName()+"', '"+person.getLastName()+"',"
 				+ "'"+person.getPhone()+"', '"+person.getAdress()+"', '"+person.getEmail()+"')";
 
+		return executeSql.executeDML(sql);
+	}
+
+	public boolean deletePerson(String cc){
+		sql = "DELETE FROM person WHERE cc = '"+cc+"'";
+		return executeSql.executeDML(sql);
+	}
+
+	public boolean updatePerson(String cc, Person person){
+		sql = "UPDATE person "
+				+ "SET name = '"+person.getName()+"', last_name = '"+person.getLastName()+"', "
+				+ "phone = '"+person.getPhone()+"', adress = '"+person.getAdress()+"', email = '"+person.getEmail()+"' "
+				+ "WHERE cc = '"+cc+"'";
 		return executeSql.executeDML(sql);
 	}
 }
