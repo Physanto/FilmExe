@@ -24,12 +24,10 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btn2EChair = new javax.swing.JButton();
         btn2FChair = new javax.swing.JButton();
         btn2GChair = new javax.swing.JButton();
-        btn2HChair = new javax.swing.JButton();
         btn3EChair = new javax.swing.JButton();
         btn3FChair = new javax.swing.JButton();
         btn3GChair = new javax.swing.JButton();
         btn3AChair = new javax.swing.JButton();
-        btn3HChair = new javax.swing.JButton();
         btn3BChair = new javax.swing.JButton();
         btn3CChair = new javax.swing.JButton();
         btn3DChair = new javax.swing.JButton();
@@ -40,9 +38,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btn4AChair = new javax.swing.JButton();
         btn4BChair = new javax.swing.JButton();
         btn4CChair = new javax.swing.JButton();
-        btn4HChair = new javax.swing.JButton();
         btn5FChair = new javax.swing.JButton();
-        btn5HChair = new javax.swing.JButton();
         btn5EChair = new javax.swing.JButton();
         btn5GChair = new javax.swing.JButton();
         btn5DChair = new javax.swing.JButton();
@@ -50,7 +46,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btn5BChair = new javax.swing.JButton();
         btn5CChair = new javax.swing.JButton();
         btn6FChair = new javax.swing.JButton();
-        btn6HChair = new javax.swing.JButton();
         btn6EChair = new javax.swing.JButton();
         btn6GChair = new javax.swing.JButton();
         btn6DChair = new javax.swing.JButton();
@@ -72,8 +67,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btnSelling = new javax.swing.JButton();
         btnExit = new javax.swing.JButton();
         btnModify = new javax.swing.JButton();
-        jLabel14 = new javax.swing.JLabel();
-        btn1HChair = new javax.swing.JButton();
         btn1AChair = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
@@ -109,8 +102,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
 
         btn2GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
-        btn2HChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
-
         btn3EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         btn3FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
@@ -118,8 +109,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btn3GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         btn3AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
-
-        btn3HChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         btn3BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
@@ -141,11 +130,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
 
         btn4CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
-        btn4HChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
-
         btn5FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
-
-        btn5HChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         btn5EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
@@ -160,8 +145,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btn5CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         btn6FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
-
-        btn6HChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         btn6EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
@@ -220,19 +203,14 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btnModify.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonEditar.png"))); // NOI18N
         btnModify.setText("MODIFICAR");
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel14.setText("H");
-
-        btn1HChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
-
         btn1AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel15.setText("6");
 
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PantallaFinal.png"))); // NOI18N
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Pantalla.png"))); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel1.setText("PANTALLA");
 
         btnShowSales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TablaVentas.png"))); // NOI18N
@@ -242,10 +220,18 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(74, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(122, 122, 122)
+                        .addGap(43, 43, 43)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(333, 333, 333)
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 304, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -345,16 +331,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                             .addComponent(btn2GChair)
                                             .addComponent(btn1GChair, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING))))
-                                .addGap(67, 67, 67)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btn3HChair)
-                                    .addComponent(btn4HChair)
-                                    .addComponent(btn5HChair)
-                                    .addComponent(btn2HChair)
-                                    .addComponent(btn6HChair)
-                                    .addComponent(btn1HChair)
-                                    .addComponent(jLabel14)))
+                                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING)))))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btn6EChair)
                                 .addGap(47, 47, 47)
@@ -370,34 +347,27 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btn4EChair)
                                 .addGap(47, 47, 47)
-                                .addComponent(btn4FChair))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(484, 484, 484)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel16)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(93, 93, 93)
-                                .addComponent(jLabel1)))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnSelling, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnModify, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn4FChair)))))
+                .addGap(88, 88, 88)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(btnSelling, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnModify, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(73, 73, 73))
+                .addGap(124, 124, 124))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel16)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(jLabel7)
                                     .addComponent(jLabel6)
@@ -485,45 +455,32 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
                                         .addComponent(btn6EChair)
                                         .addComponent(btn6FChair, javax.swing.GroupLayout.Alignment.TRAILING))
                                     .addComponent(jLabel15)))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel14)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btn1HChair)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(btn2HChair)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(btn3HChair)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(btn4HChair)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(btn5HChair)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(btn6HChair))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel8)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(btn1GChair)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(btn2GChair)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(btn3GChair)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(btn4GChair)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(btn5GChair)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(btn6GChair)))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btn1GChair)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn2GChair)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn3GChair)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn4GChair)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn5GChair)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn6GChair)))
+                        .addGap(40, 40, 40))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(27, 27, 27)
+                        .addGap(52, 52, 52)
                         .addComponent(btnSelling, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(73, 73, 73)
+                        .addGap(65, 65, 65)
                         .addComponent(btnModify, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(54, 54, 54)
-                        .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(54, 54, 54)
-                        .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(42, 42, 42)
+                        .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(44, 44, 44)
+                        .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         pack();
@@ -537,7 +494,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
     private javax.swing.JButton btn1EChair;
     private javax.swing.JButton btn1FChair;
     private javax.swing.JButton btn1GChair;
-    private javax.swing.JButton btn1HChair;
     private javax.swing.JButton btn2AChair;
     private javax.swing.JButton btn2BChair;
     private javax.swing.JButton btn2CChair;
@@ -545,7 +501,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
     private javax.swing.JButton btn2EChair;
     private javax.swing.JButton btn2FChair;
     private javax.swing.JButton btn2GChair;
-    private javax.swing.JButton btn2HChair;
     private javax.swing.JButton btn3AChair;
     private javax.swing.JButton btn3BChair;
     private javax.swing.JButton btn3CChair;
@@ -553,7 +508,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
     private javax.swing.JButton btn3EChair;
     private javax.swing.JButton btn3FChair;
     private javax.swing.JButton btn3GChair;
-    private javax.swing.JButton btn3HChair;
     private javax.swing.JButton btn4AChair;
     private javax.swing.JButton btn4BChair;
     private javax.swing.JButton btn4CChair;
@@ -561,7 +515,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
     private javax.swing.JButton btn4EChair;
     private javax.swing.JButton btn4FChair;
     private javax.swing.JButton btn4GChair;
-    private javax.swing.JButton btn4HChair;
     private javax.swing.JButton btn5AChair;
     private javax.swing.JButton btn5BChair;
     private javax.swing.JButton btn5CChair;
@@ -569,7 +522,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
     private javax.swing.JButton btn5EChair;
     private javax.swing.JButton btn5FChair;
     private javax.swing.JButton btn5GChair;
-    private javax.swing.JButton btn5HChair;
     private javax.swing.JButton btn6AChair;
     private javax.swing.JButton btn6BChair;
     private javax.swing.JButton btn6CChair;
@@ -577,7 +529,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
     private javax.swing.JButton btn6EChair;
     private javax.swing.JButton btn6FChair;
     private javax.swing.JButton btn6GChair;
-    private javax.swing.JButton btn6HChair;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnModify;
     private javax.swing.JButton btnSelling;
@@ -587,7 +538,6 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
