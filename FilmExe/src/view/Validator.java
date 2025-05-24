@@ -35,7 +35,7 @@ public class Validator {
     }
 
     /**
-     * Checks whether the given text is not empty(not null and not whiteSpaces) and whether in the length specified.
+     * Checks whether the given text is not empty(not null and not whiteSpaces) and whether in the length specified (minimum length and maximum length).
      *
      * @param text is string to evaluate
      * @param lengthMin is int that indicate the length min to string
