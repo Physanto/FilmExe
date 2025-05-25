@@ -26,7 +26,7 @@ public class ExecuteSql {
 		return check;
 	}
 
-	public ResultSet ejecutarConsulta(String sql) {
+	public ResultSet executeQuery(String sql) {
 
 		ResultSet data = null;
 
