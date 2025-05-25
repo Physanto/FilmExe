@@ -9,6 +9,7 @@ import java.sql.SQLException;
  * @author initmanfig
  */
 public class SaleDAO {
+
 	private ResultSet resulSet;
 	private ExecuteSql executeSql;
 	private String sql;
@@ -18,7 +19,7 @@ public class SaleDAO {
 	}
 
 	public boolean makeSeal(Sale sale, int idPerson){
-		sql = "INSER INTO sale ("
+		sql = "INSERT INTO sale ("
 				+ "total, star_date, end_date) VALUES ("
 				+ ""+sale.getTotal()+", '"+sale.getStar_date()+"',"
 				+ "'"+sale.getEnd_date()+"', "+idPerson+")";
