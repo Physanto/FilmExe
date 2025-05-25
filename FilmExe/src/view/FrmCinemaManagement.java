@@ -200,10 +200,14 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonSalir.png"))); // NOI18N
         btnExit.setText("SALIR");
 
+        btnModify.setBackground(new java.awt.Color(255, 255, 255));
         btnModify.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonEditar.png"))); // NOI18N
         btnModify.setText("MODIFICAR");
+        btnModify.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnModify.setContentAreaFilled(false);
 
         btn1AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn1AChair.setName("A1"); // NOI18N
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel15.setText("6");
