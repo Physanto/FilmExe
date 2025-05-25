@@ -16,7 +16,7 @@ public class FrmHome extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
 
-        labelHomeTitle.setFont(new java.awt.Font("Segoe UI", 2, 24)); // NOI18N
+        labelHomeTitle.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         labelHomeTitle.setText(" Bienvenido a FilmExe");
 
         btnLogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonEntrarSistema.png"))); // NOI18N
@@ -34,7 +34,7 @@ public class FrmHome extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(635, 635, 635)
                         .addComponent(labelHomeTitle)))
-                .addContainerGap(640, Short.MAX_VALUE))
+                .addContainerGap(618, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

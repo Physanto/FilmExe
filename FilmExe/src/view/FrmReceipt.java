@@ -25,20 +25,20 @@ public class FrmReceipt extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
 
-        labelReceiptTitle.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
+        labelReceiptTitle.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         labelReceiptTitle.setText("Recibo de compra");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoGrande.png"))); // NOI18N
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoPersona.png"))); // NOI18N
 
-        labelReceiptChairTitle.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
+        labelReceiptChairTitle.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         labelReceiptChairTitle.setText("Silla");
 
-        labelReceiptClientTitle.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
+        labelReceiptClientTitle.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         labelReceiptClientTitle.setText("Cliente");
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel6.setText("GRACIAS POR COMPRAR EN FILMEX");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -55,9 +55,9 @@ public class FrmReceipt extends javax.swing.JFrame {
                                 .addGap(167, 167, 167)
                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(35, 35, 35)
-                                .addComponent(labelReceiptChairTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(214, 214, 214)
+                                .addGap(32, 32, 32)
+                                .addComponent(labelReceiptChairTitle)
+                                .addGap(216, 216, 216)
                                 .addComponent(labelReceiptClientTitle))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(615, 615, 615)

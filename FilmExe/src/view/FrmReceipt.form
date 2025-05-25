@@ -37,9 +37,9 @@
                               <Component id="jLabel3" min="-2" pref="99" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-                              <Component id="labelReceiptChairTitle" min="-2" pref="37" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="214" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                              <Component id="labelReceiptChairTitle" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="216" max="-2" attributes="0"/>
                               <Component id="labelReceiptClientTitle" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -112,7 +112,7 @@
     <Component class="javax.swing.JLabel" name="labelReceiptTitle">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="2"/>
+          <Font name="Segoe UI" size="18" style="3"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Recibo de compra"/>
       </Properties>
@@ -134,7 +134,7 @@
     <Component class="javax.swing.JLabel" name="labelReceiptChairTitle">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="2"/>
+          <Font name="Segoe UI" size="18" style="3"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Silla"/>
       </Properties>
@@ -142,7 +142,7 @@
     <Component class="javax.swing.JLabel" name="labelReceiptClientTitle">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="2"/>
+          <Font name="Segoe UI" size="18" style="3"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Cliente"/>
       </Properties>
@@ -162,7 +162,7 @@
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="2"/>
+          <Font name="Segoe UI" size="18" style="3"/>
         </Property>
         <Property name="text" type="java.lang.String" value="GRACIAS POR COMPRAR EN FILMEX"/>
       </Properties>
