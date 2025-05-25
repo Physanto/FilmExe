@@ -20,6 +20,12 @@ public class Sale {
 		this.end_date = end_date;
 	}
 
+	public Sale(double total, LocalDateTime star_date, LocalDateTime end_date) {
+		this.total = total;
+		this.star_date = star_date;
+		this.end_date = end_date;
+	}
+
 	public int getId() {
 		return id;
 	}

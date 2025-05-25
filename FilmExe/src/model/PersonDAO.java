@@ -90,7 +90,7 @@ public class PersonDAO{
 		
 		int cantRow = resultSet.getRow();
 
-		if(cantRow > 0) return null;
+		if(cantRow <= 0) return null;
 
 		Object[][] data = new Object[cantRow][6];
 		

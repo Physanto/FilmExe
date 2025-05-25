@@ -61,7 +61,7 @@ public class PersonController {
 	
 	/**
 	 * method that will show all person registered in the database
-	 * @return Object[][] if exist persons
+	 * @return Object[][] if exist persons; null otherwise
 	 */
 	public Object[][] showAllPerson(){
 
