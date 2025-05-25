@@ -41,6 +41,7 @@ public class PersonDAO{
 				+ "SET name = '"+person.getName()+"', last_name = '"+person.getLastName()+"', "
 				+ "phone = '"+person.getPhone()+"', adress = '"+person.getAdress()+"', email = '"+person.getEmail()+"' "
 				+ "WHERE cc = '"+cc+"'";
+		System.out.println("SQL FINAL DE UPDATE: " + sql);
 		return executeSql.executeDML(sql);
 	}
 }
