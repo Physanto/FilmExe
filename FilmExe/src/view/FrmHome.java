@@ -1,9 +1,14 @@
 package view;
 
+import javax.swing.JFrame;
+
 public class FrmHome extends javax.swing.JFrame {
 
     public FrmHome() {
         initComponents();
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        this.setVisible(true);
+        btnLogIn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     }
 
     @SuppressWarnings("unchecked")
@@ -21,6 +26,13 @@ public class FrmHome extends javax.swing.JFrame {
 
         btnLogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonEntrarSistema.png"))); // NOI18N
         btnLogIn.setText("INICIAR");
+        btnLogIn.setBorder(null);
+        btnLogIn.setContentAreaFilled(false);
+        btnLogIn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogInActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -48,6 +60,12 @@ public class FrmHome extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnLogInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogInActionPerformed
+        FrmCinemaManagement logIn = new FrmCinemaManagement();
+        logIn.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnLogInActionPerformed
     public static void main(String args[]) {
   
         java.awt.EventQueue.invokeLater(new Runnable() {

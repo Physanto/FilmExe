@@ -1,10 +1,19 @@
 package view;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 
 public class FrmCinemaManagement extends javax.swing.JFrame {
 
     public FrmCinemaManagement() {
         initComponents();
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        this.setVisible(true);
+        btnSelling.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnModify.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnShowSales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     }
 
     @SuppressWarnings("unchecked")
@@ -194,11 +203,27 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel13.setText("5");
 
+        btnSelling.setBackground(new java.awt.Color(255, 255, 255));
         btnSelling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVender.png"))); // NOI18N
         btnSelling.setText("HACER VENTA");
+        btnSelling.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnSelling.setContentAreaFilled(false);
+        btnSelling.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSellingActionPerformed(evt);
+            }
+        });
 
+        btnExit.setBackground(new java.awt.Color(255, 255, 255));
         btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonSalir.png"))); // NOI18N
         btnExit.setText("SALIR");
+        btnExit.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnExit.setContentAreaFilled(false);
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
 
         btnModify.setBackground(new java.awt.Color(255, 255, 255));
         btnModify.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonEditar.png"))); // NOI18N
@@ -219,6 +244,13 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
 
         btnShowSales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TablaVentas.png"))); // NOI18N
         btnShowSales.setText("VENTAS");
+        btnShowSales.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnShowSales.setContentAreaFilled(false);
+        btnShowSales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnShowSalesActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -371,7 +403,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
                         .addComponent(jLabel16)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(jLabel7)
                                     .addComponent(jLabel6)
@@ -480,15 +512,36 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
                         .addComponent(btnSelling, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(65, 65, 65)
                         .addComponent(btnModify, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(42, 42, 42)
-                        .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(44, 44, 44)
-                        .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(57, 57, 57)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(169, 169, 169))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSellingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSellingActionPerformed
+        FrmSelling selling = new FrmSelling();
+        selling.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnSellingActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        JOptionPane.showMessageDialog(this, "Hasta luego");
+        this.dispose();
+    }//GEN-LAST:event_btnExitActionPerformed
+
+    private void btnShowSalesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnShowSalesActionPerformed
+        FrmShowSales sales = new FrmShowSales();
+        sales.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnShowSalesActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1AChair;

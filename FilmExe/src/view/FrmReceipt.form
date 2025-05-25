@@ -28,46 +28,62 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="582" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jLabel2" min="-2" pref="96" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
-                              <Component id="jLabel3" min="-2" pref="99" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                              <Component id="labelReceiptChairTitle" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="216" max="-2" attributes="0"/>
-                              <Component id="labelReceiptClientTitle" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="619" max="-2" attributes="0"/>
+                      <Component id="labelReceiptChairTitle" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="188" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" pref="99" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="615" max="-2" attributes="0"/>
-                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="868" max="-2" attributes="0"/>
+                      <Component id="labelReceiptClientTitle" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="698" max="-2" attributes="0"/>
                       <Component id="labelReceiptTitle" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="563" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="txtReceiptChairPrice" pref="160" max="32767" attributes="0"/>
-                          <Component id="txtReceiptChairId" max="32767" attributes="0"/>
-                          <Component id="txtReceiptChairName" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="819" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="txtReceiptClientCC" min="-2" pref="158" max="-2" attributes="0"/>
                           <Component id="txtReceiptClientName" min="-2" pref="158" max="-2" attributes="0"/>
-                          <Component id="txtReceiptClientPaymentMethod" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="txtReceiptClientAddress" min="-2" pref="158" max="-2" attributes="0"/>
+                          <Component id="txtReceiptClientPhone" min="-2" pref="158" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="559" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel2" min="-2" pref="96" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
+                              <Component id="txtReceiptClientCC" min="-2" pref="158" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="txtReceiptChairPrice" max="32767" attributes="0"/>
+                                  <Component id="txtReceiptChairName" min="-2" pref="160" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                              <Component id="txtReceiptClientLastName" min="-2" pref="158" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="166" max="-2" attributes="0"/>
+                      <Component id="btnGetBackHome3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="306" max="-2" attributes="0"/>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="txtReceiptClientEmail" min="-2" pref="158" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="943" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -75,35 +91,51 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-              <Component id="labelReceiptTitle" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="labelReceiptChairTitle" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="labelReceiptClientTitle" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="btnGetBackHome3" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="labelReceiptTitle" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                      <Component id="labelReceiptClientTitle" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                              <Component id="txtReceiptClientCC" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="labelReceiptChairTitle" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="txtReceiptClientName" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                              <Component id="txtReceiptClientLastName" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                              <Component id="txtReceiptChairName" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="txtReceiptChairPrice" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                      <Component id="txtReceiptClientPhone" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="txtReceiptClientAddress" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                      <Component id="txtReceiptClientEmail" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtReceiptChairId" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtReceiptClientName" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtReceiptChairPrice" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtReceiptClientCC" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="txtReceiptChairName" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtReceiptClientPaymentMethod" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="299" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -147,17 +179,15 @@
         <Property name="text" type="java.lang.String" value="Cliente"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtReceiptChairId">
+    <Component class="javax.swing.JTextField" name="txtReceiptChairName">
     </Component>
     <Component class="javax.swing.JTextField" name="txtReceiptChairPrice">
     </Component>
-    <Component class="javax.swing.JTextField" name="txtReceiptChairName">
+    <Component class="javax.swing.JTextField" name="txtReceiptClientCC">
     </Component>
     <Component class="javax.swing.JTextField" name="txtReceiptClientName">
     </Component>
-    <Component class="javax.swing.JTextField" name="txtReceiptClientCC">
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtReceiptClientPaymentMethod">
+    <Component class="javax.swing.JTextField" name="txtReceiptClientLastName">
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
@@ -166,6 +196,27 @@
         </Property>
         <Property name="text" type="java.lang.String" value="GRACIAS POR COMPRAR EN FILMEX"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtReceiptClientAddress">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtReceiptClientEmail">
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtReceiptClientPhone">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnGetBackHome3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Images/IconoBotonVolver.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="VOLVER"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGetBackHome3ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

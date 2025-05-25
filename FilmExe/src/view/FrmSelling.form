@@ -55,7 +55,7 @@
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="271" max="-2" attributes="0"/>
                               <Component id="btnGetBackHome" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="353" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="690" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
@@ -65,28 +65,26 @@
                                           <Component id="txtChairPrice" min="-2" pref="159" max="-2" attributes="0"/>
                                           <Component id="txtChairName" min="-2" pref="159" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="106" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="jLabel6" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="txtClientCC" max="32767" attributes="0"/>
+                                  <Component id="txtClientName" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="txtClientLastName" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
+                                  <Component id="txtClientPhone" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
+                                  <Component id="txtClientAddress" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
+                                  <Component id="txtClientEmail" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="137" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="txtClientCC" max="32767" attributes="0"/>
-                          <Component id="txtClientName" alignment="0" max="32767" attributes="0"/>
-                          <Component id="txtClientLastName" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
-                          <Component id="txtClientPhone" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
-                          <Component id="txtClientAddress" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
-                          <Component id="txtClientEmail" alignment="0" min="-2" pref="161" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="117" max="-2" attributes="0"/>
                       <Component id="btnSell" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="670" max="32767" attributes="0"/>
+              <EmptySpace pref="662" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -112,46 +110,44 @@
               </Group>
               <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Component id="txtClientCC" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="137" pref="310" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnSell" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnGetBackHome" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="323" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
+                              <Component id="txtClientCC" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                               <Component id="txtClientName" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                               <Component id="txtClientLastName" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="txtChairName" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="txtChairPrice" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                                  <Component id="txtChairName" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Component id="txtChairPrice" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Component id="txtClientPhone" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                       <Component id="txtClientAddress" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                              <Component id="txtClientEmail" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="42" max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="btnSell" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="btnGetBackHome" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="323" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Component id="txtClientEmail" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -196,6 +192,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtClientCC">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtClientCCActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtClientName">
     </Component>
@@ -203,11 +202,21 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnSell">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoBotonVender.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Vender"/>
+        <Property name="text" type="java.lang.String" value="VENDER"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="null"/>
+        </Property>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSellActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
@@ -227,11 +236,23 @@
     </Component>
     <Component class="javax.swing.JButton" name="btnGetBackHome">
       <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoBotonVolver.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="VOLVER"/>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder/>
+          </Border>
+        </Property>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGetBackHomeActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtClientPhone">
     </Component>

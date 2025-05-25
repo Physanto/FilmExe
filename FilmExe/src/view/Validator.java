@@ -8,13 +8,13 @@ package view;
 public class Validator {
 
     /**
-     * Checks whether the given text is not empty(not null and not whiteSpaces)
+     * Checks whether the given text is empty(null)
      *
      * @param text the string to evaluate
-     * @return true if the text is not empty after trimming; false otherwise
+     * @return true if the text is empty after trimming; false otherwise
      */
-    public static boolean isNotEmpty(String text) {
-        return text != null && !text.trim().isEmpty();
+    public static boolean isEmpty(String text) {
+        return text == null && text.trim().isEmpty();
     }
 
     /**
@@ -43,6 +43,6 @@ public class Validator {
      * @return true if the text are the length specified.
      */
     public static boolean lengthBetween(String text, int lengthMin, int lengthMax) {
-        return isNotEmpty(text) && (text.length() >= lengthMin && text.length() <= lengthMax);
+        return !isEmpty(text) && (text.length() >= lengthMin && text.length() <= lengthMax);
     }
 }

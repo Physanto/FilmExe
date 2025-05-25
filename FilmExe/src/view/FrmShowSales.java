@@ -1,9 +1,14 @@
 package view;
 
+import javax.swing.JFrame;
+
 public class FrmShowSales extends javax.swing.JFrame {
     
     public FrmShowSales() {
         initComponents();
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        this.setVisible(true);
+        btnGetBackHome2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     }
 
     @SuppressWarnings("unchecked")
@@ -34,28 +39,36 @@ public class FrmShowSales extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         jLabel1.setText("VENTAS FILMEXE");
 
+        btnGetBackHome2.setBackground(new java.awt.Color(255, 255, 255));
         btnGetBackHome2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVolver.png"))); // NOI18N
         btnGetBackHome2.setText("VOLVER");
+        btnGetBackHome2.setBorder(null);
+        btnGetBackHome2.setContentAreaFilled(false);
+        btnGetBackHome2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGetBackHome2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
+                .addGap(107, 107, 107)
                 .addComponent(btnGetBackHome2)
-                .addGap(170, 170, 170)
+                .addGap(155, 155, 155)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 751, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(1069, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(657, 657, 657))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(407, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnGetBackHome2)
                     .addGroup(layout.createSequentialGroup()
@@ -67,6 +80,12 @@ public class FrmShowSales extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnGetBackHome2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGetBackHome2ActionPerformed
+        FrmCinemaManagement home = new FrmCinemaManagement();
+        home.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnGetBackHome2ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGetBackHome2;
