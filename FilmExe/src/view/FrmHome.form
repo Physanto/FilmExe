@@ -37,7 +37,7 @@
                       <Component id="labelHomeTitle" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="618" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -48,7 +48,7 @@
               <Component id="labelHomeTitle" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="123" max="-2" attributes="0"/>
               <Component id="btnLogIn" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="332" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

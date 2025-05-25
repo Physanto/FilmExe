@@ -34,7 +34,7 @@ public class FrmHome extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(635, 635, 635)
                         .addComponent(labelHomeTitle)))
-                .addContainerGap(618, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -43,7 +43,7 @@ public class FrmHome extends javax.swing.JFrame {
                 .addComponent(labelHomeTitle)
                 .addGap(123, 123, 123)
                 .addComponent(btnLogIn)
-                .addContainerGap(332, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
