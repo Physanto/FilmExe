@@ -18,7 +18,7 @@ public class SaleDAO {
 		executeSql = new ExecuteSql();
 	}
 
-	public boolean makeSeal(Sale sale, int idPerson){
+	public boolean makeSale(Sale sale, int idPerson){
 		sql = "INSERT INTO sale ("
 				+ "total, star_date, end_date person_id) VALUES ("
 				+ ""+sale.getTotal()+", '"+sale.getStar_date()+"',"
@@ -27,7 +27,7 @@ public class SaleDAO {
 		return executeSql.executeDML(sql);
 	}
 
-	public Object[][] searchSeal(String cc) throws SQLException{
+	public Object[][] searchSale(String cc) throws SQLException{
 		
 		Object[][] data = new Object[countAllSale()][5];
 

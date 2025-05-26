@@ -1,8 +1,16 @@
 package view;
 
+import controller.PersonController;
+import controller.SaleController;
 import javax.swing.JFrame;
+import javax.swing.table.DefaultTableModel;
 
 public class FrmShowSales extends javax.swing.JFrame {
+   
+    DefaultTableModel tableSalesModel;
+    private SaleController saleController;
+    String[] columns = {"Total", "Fecha compra", "Fecha funcion", "Id Cliente"};
+    Object data[][];
     
     public FrmShowSales() {
         initComponents();
@@ -11,19 +19,31 @@ public class FrmShowSales extends javax.swing.JFrame {
         btnGetBackHome2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     }
 
+    public void showTable() {
+		
+        
+        if(data == null){
+            System.out.println("vacio");
+        }
+        tableSalesModel = new DefaultTableModel(data, columns);
+        tableSales.setModel(tableSalesModel);
+        tableSales.validate();
+        tableSales.repaint();
+    }
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tableSales = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         btnGetBackHome2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tableSales.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -34,7 +54,7 @@ public class FrmShowSales extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tableSales);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         jLabel1.setText("VENTAS FILMEXE");
@@ -91,6 +111,6 @@ public class FrmShowSales extends javax.swing.JFrame {
     private javax.swing.JButton btnGetBackHome2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tableSales;
     // End of variables declaration//GEN-END:variables
 }

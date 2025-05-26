@@ -16,6 +16,6 @@ public class SaleController {
 	}
 
 	public boolean makeSale(Sale sale, int idPerson){
-		return saleDAO.makeSeal(sale, idPerson);
+		//return saleDAO.makeSeal(sale, idPerson);
 	}
 }
