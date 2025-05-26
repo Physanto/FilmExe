@@ -11,8 +11,10 @@ public class FrmSelling extends javax.swing.JFrame {
         this.setVisible(true);
         btnGetBackHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSell.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnLogOutClient.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnSearchClient.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -33,6 +35,9 @@ public class FrmSelling extends javax.swing.JFrame {
         txtClientPhone = new javax.swing.JTextField();
         txtClientAddress = new javax.swing.JTextField();
         txtClientEmail = new javax.swing.JTextField();
+        btnLogOutClient = new javax.swing.JButton();
+        btnSearchClient = new javax.swing.JButton();
+        txtSearchClient = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
@@ -48,12 +53,6 @@ public class FrmSelling extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoPersona.png"))); // NOI18N
         jLabel4.setText("jLabel4");
-
-        txtClientCC.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtClientCCActionPerformed(evt);
-            }
-        });
 
         btnSell.setBackground(new java.awt.Color(255, 255, 255));
         btnSell.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVender.png"))); // NOI18N
@@ -83,6 +82,15 @@ public class FrmSelling extends javax.swing.JFrame {
             }
         });
 
+        btnLogOutClient.setText("Registrar Cliente");
+        btnLogOutClient.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLogOutClientActionPerformed(evt);
+            }
+        });
+
+        btnSearchClient.setText("Buscar");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -101,7 +109,16 @@ public class FrmSelling extends javax.swing.JFrame {
                                 .addGap(191, 191, 191)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(271, 271, 271)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnLogOutClient)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(19, 19, 19)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtSearchClient, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(btnSearchClient)))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(774, 774, 774)
                         .addComponent(jLabel5))
@@ -130,7 +147,7 @@ public class FrmSelling extends javax.swing.JFrame {
                                     .addComponent(txtClientEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(137, 137, 137)))
                         .addComponent(btnSell)))
-                .addContainerGap(662, Short.MAX_VALUE))
+                .addContainerGap(595, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -141,9 +158,18 @@ public class FrmSelling extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3))
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel4)
-                        .addGap(38, 38, 38))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(31, 31, 31)
+                                .addComponent(jLabel4))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(16, 16, 16)
+                                .addComponent(btnLogOutClient)
+                                .addGap(44, 44, 44)
+                                .addComponent(txtSearchClient, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnSearchClient)))
+                        .addGap(23, 23, 23))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel1)
@@ -171,9 +197,7 @@ public class FrmSelling extends javax.swing.JFrame {
                                     .addComponent(txtChairName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(30, 30, 30)
                                     .addComponent(txtChairPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel6)
-                                    .addGap(122, 122, 122))))
+                                .addComponent(jLabel6)))
                         .addGap(30, 30, 30)
                         .addComponent(txtClientPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
@@ -193,22 +217,30 @@ public class FrmSelling extends javax.swing.JFrame {
     }//GEN-LAST:event_btnGetBackHomeActionPerformed
 
     private void btnSellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSellActionPerformed
+        if (Validator.isEmpty(txtClientCC.getText()) || Validator.isEmpty(txtClientName.getText())
+                || Validator.isEmpty(txtClientLastName.getText()) || Validator.isEmpty(txtClientPhone.getText())
+                || Validator.isEmpty(txtClientAddress.getText()) || Validator.isEmpty(txtClientEmail.getText())) {
+            JOptionPane.showMessageDialog(this, "Llena todos los campos del cliente para realizar la venta");
+            return;
+        }
+        if(!Validator.lengthBetween(txtClientCC.getText(), 8, 10) || Validator.lengthBetween(txt, HEIGHT, HEIGHT)){
+            JOptionPane.showMessageDialog(this, "Verifique la longitud de los datos");
+        }
         FrmReceipt receipt = new FrmReceipt();
         receipt.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnSellActionPerformed
 
-    private void txtClientCCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtClientCCActionPerformed
-        if(Validator.isEmpty(txtClientCC.getText()) && Validator.isEmpty(txtClientName.getText()) &&
-                Validator.isEmpty(txtClientLastName.getText()) && Validator.isEmpty(txtClientPhone.getText()) &&
-                Validator.isEmpty(txtClientAddress.getText()) && Validator.isEmpty(txtClientEmail.getText())){
-            JOptionPane.showMessageDialog(this, "Llena todos los campos para registrar el cliente");
-            return;
-        }
-    }//GEN-LAST:event_txtClientCCActionPerformed
+    private void btnLogOutClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogOutClientActionPerformed
+        FrmLogOutClient logOut = new FrmLogOutClient();
+        logOut.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnLogOutClientActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGetBackHome;
+    private javax.swing.JButton btnLogOutClient;
+    private javax.swing.JButton btnSearchClient;
     private javax.swing.JButton btnSell;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -224,5 +256,6 @@ public class FrmSelling extends javax.swing.JFrame {
     private javax.swing.JTextField txtClientLastName;
     private javax.swing.JTextField txtClientName;
     private javax.swing.JTextField txtClientPhone;
+    private javax.swing.JTextField txtSearchClient;
     // End of variables declaration//GEN-END:variables
 }
