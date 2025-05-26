@@ -27,7 +27,7 @@ public class PersonDAO{
 	public boolean insertPerson(Person person){	
 
 		sql = "INSERT INTO person ("
-				+ "cc, name, last_name, phone, adress, email) VALUES ("
+				+ "cc, name, last_name, phone, address, email) VALUES ("
 				+ "'"+person.getCc()+"', '"+person.getName()+"', '"+person.getLastName()+"',"
 				+ "'"+person.getPhone()+"', '"+person.getAdress()+"', '"+person.getEmail()+"')";
 
@@ -53,7 +53,7 @@ public class PersonDAO{
 	public boolean updatePerson(String cc, Person person){
 		sql = "UPDATE person "
 				+ "SET name = '"+person.getName()+"', last_name = '"+person.getLastName()+"', "
-				+ "phone = '"+person.getPhone()+"', adress = '"+person.getAdress()+"', email = '"+person.getEmail()+"' "
+				+ "phone = '"+person.getPhone()+"', address = '"+person.getAdress()+"', email = '"+person.getEmail()+"' "
 				+ "WHERE cc = '"+cc+"'";
 		return executeSql.executeDML(sql);
 	}
@@ -72,7 +72,7 @@ public class PersonDAO{
 
 		if(resultSet.next()){
 			return new Person(cc, resultSet.getString("name"), resultSet.getString("last_name"), resultSet.getString("phone"),
-				resultSet.getString("adress"), resultSet.getString("email"));
+				resultSet.getString("address"), resultSet.getString("email"));
 		}
 		return null;	
 	}	

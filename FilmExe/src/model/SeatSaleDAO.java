@@ -22,5 +22,6 @@ public class SeatSaleDAO {
 
 		sql = "INSER INTO sale_seat ("
 				+ "price, ";
+                return true;
 	}
 }
