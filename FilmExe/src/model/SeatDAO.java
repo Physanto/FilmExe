@@ -38,4 +38,16 @@ public class SeatDAO {
         }
         return null;
     }
+
+	public int countSeats(){
+		sql = "SELECT COUNT(*) FROM seat";
+		resultSet = executeSql.executeQuery(sql);
+		
+		int cantRow = resultSet.la;
+
+		if()
+		if(resultSet.next()){		
+
+		}
+	}
 }

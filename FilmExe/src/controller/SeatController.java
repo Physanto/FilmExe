@@ -20,7 +20,7 @@ public class SeatController {
         seatDAO = new SeatDAO();
     }
 
-    public boolean insertPerson(String[] seats) {
+    public boolean insertAllSeats(String[] seats) {
         return seatDAO.insertSeats(seats);
     }
 
