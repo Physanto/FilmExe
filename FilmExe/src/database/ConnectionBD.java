@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class ConnectionBD {
 
-	static String bd = "filmExe_db"; 
+	static String bd = "FilmExe_db"; 
 	static String user = "root";
 	static String password = "12345";
 	static String url = "jdbc:mysql://localhost:3306/" + bd + "?useUnicode=true";		

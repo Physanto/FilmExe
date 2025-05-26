@@ -84,30 +84,35 @@ public class PersonDAO{
 	 */
 	public Object[][] showAllPerson() throws SQLException{
 		
+		Object[][] data = new Object[countAllPerson()][6];
+
 		sql = "SELECT * FROM person";	
 
 		resultSet = executeSql.executeQuery(sql);
 		
-		Object[][] data = new Object[3][6];
-		
 		int i = 0;
 		while(resultSet.next()){
-			data[i][0] = resultSet.getString("cc");
-			data[i][1] = resultSet.getString("name");
-			data[i][2] = resultSet.getString("last_name");
-			data[i][3] = resultSet.getString("phone");
-			data[i][4] = resultSet.getString("adress");
-			data[i][5] = resultSet.getString("email");
+			data[i][0] = resultSet.getString(1);
+			data[i][1] = resultSet.getString(2);
+			data[i][2] = resultSet.getString(3);
+			data[i][3] = resultSet.getString(4);
+			data[i][4] = resultSet.getString(5);
+			data[i][5] = resultSet.getString(6);
 			i++;
 		}
 		return data;
 	}
         
-        public int countAllPerson(ResultSet resultSet) throws SQLException {
-            int i = 0;
-            while(resultSet.next()){
-                i++;
-            }
-            return i;
+        public int countAllPerson() throws SQLException {
+			sql = "SELECT COUNT(*) FROM person";
+			resultSet = executeSql.executeQuery(sql);
+
+			int countRow = 0;
+
+			while(resultSet.next()){
+				countRow = resultSet.getInt(1);
+			}
+			System.out.println("cantidad de datos" + countRow);
+			return countRow;
         }
 }

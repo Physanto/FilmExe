@@ -34,6 +34,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
     }
 
     public void showTable() {
+		
         data = personController.showAllPerson();
         if(data == null){
             System.out.println("vacio");

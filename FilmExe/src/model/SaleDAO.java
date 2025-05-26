@@ -10,7 +10,7 @@ import java.sql.SQLException;
  */
 public class SaleDAO {
 
-	private ResultSet resulSet;
+	private ResultSet resultSet;
 	private ExecuteSql executeSql;
 	private String sql;
 
@@ -20,7 +20,7 @@ public class SaleDAO {
 
 	public boolean makeSeal(Sale sale, int idPerson){
 		sql = "INSERT INTO sale ("
-				+ "total, star_date, end_date) VALUES ("
+				+ "total, star_date, end_date person_id) VALUES ("
 				+ ""+sale.getTotal()+", '"+sale.getStar_date()+"',"
 				+ "'"+sale.getEnd_date()+"', "+idPerson+")";
 
@@ -29,6 +29,8 @@ public class SaleDAO {
 
 	public Object[][] searchSeal(String cc) throws SQLException{
 		
+		Object[][] data = new Object[countAllSale()][5];
+
 		sql = "SELECT p.cc,"
 				+ "p.name,"
 				+ "s.start_date,"
@@ -37,22 +39,29 @@ public class SaleDAO {
 				+ "FROM sale s "
 				+ "JOIN person p ON s.id = p.id "
 				+ "WHERE p.cc = '"+cc+"'";
-		resulSet = executeSql.executeQuery(sql);
+		resultSet = executeSql.executeQuery(sql);
 
-		int row = resulSet.getRow();
-
-		if(row <= 0) return null;
-
-		Object[][] data = new Object[row][5];
-
-		for (int i = 0; resulSet.next(); i++) {
-			data[i][0] = resulSet.getString("cc");
-			data[i][1] = resulSet.getString("name");
-			data[i][1] = resulSet.getString("start_date");
-			data[i][2] = resulSet.getString("end_date");
-			data[i][2] = resulSet.getString("total");
+		int i = 0;
+		while(resultSet.next()) {
+			data[i][0] = resultSet.getString(1);
+			data[i][1] = resultSet.getString(2);
+			data[i][2] = resultSet.getTimestamp(3);
+			data[i][3] = resultSet.getTimestamp(4);
+			data[i][4] = resultSet.getDouble(5);
 			i++;	
 		}
 		return data;	
 	}
+
+	public int countAllSale() throws SQLException {
+			sql = "SELECT COUNT(*) FROM sale";
+			resultSet = executeSql.executeQuery(sql);
+
+			int countRow = 0;
+
+			while(resultSet.next()){
+				countRow = resultSet.getInt(1);
+			}
+			return countRow;
+        }
 }
