@@ -275,6 +275,11 @@ public class FrmSelling extends javax.swing.JFrame {
             return;
         }
         Person person = personController.searchPerson(txtClientCCSearching.getText());
+
+		if(person == null){
+			int option = JOptionPane.showConfirmDialog(this, "persona no registrada, registralo");
+			return;
+		}
         txtClientCC.setText(person.getCc());
         txtClientName.setText(person.getName());
         txtClientLastName.setText(person.getLastName());

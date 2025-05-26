@@ -74,9 +74,9 @@ public class PersonDAO {
 
         resultSet = executeSql.executeQuery(sql);
 
-        if (resultSet.next()) {
-            return new Person(cc, resultSet.getString("name"), resultSet.getString("last_name"), resultSet.getString("phone"),
-                    resultSet.getString("address"), resultSet.getString("email"));
+        if (resultSet.next()){
+            return new Person(cc, resultSet.getString(3), resultSet.getString(4), resultSet.getString(5),
+                    resultSet.getString(6), resultSet.getString(7));
         }
         return null;
     }
