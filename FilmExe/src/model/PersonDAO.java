@@ -78,7 +78,7 @@ public class PersonDAO{
 	}	
 
 	/**
-	 *	method for show all person registered in database 
+	 * method for show all person registered in database 
 	 * @return Object[][] if exist persons
 	 * @throws SQLException will have to be controlled (bad syntax sql, error connection) 
 	 */

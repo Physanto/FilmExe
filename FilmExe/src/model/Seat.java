@@ -38,7 +38,5 @@ public class Seat {
 
 	public void setPrice(double price) {
 		this.price = price;
-	}
-
-	
+	}	
 }

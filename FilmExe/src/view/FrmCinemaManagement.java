@@ -1,10 +1,16 @@
 package view;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 
 public class FrmCinemaManagement extends javax.swing.JFrame {
+
+	private String[] seatNames = new String[42];
+	private int i = 0;
 
     public FrmCinemaManagement() {
         initComponents();
@@ -14,6 +20,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnModify.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnShowSales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		seatSelection();
     }
 
     @SuppressWarnings("unchecked")
@@ -86,6 +93,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1920, 1080));
 
         btn1BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn1BChair.setName("B2"); // NOI18N
 
         btn1CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
@@ -98,10 +106,12 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btn1GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         btn2AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn2AChair.setName("A2"); // NOI18N
 
         btn2BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         btn2CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn2CChair.setName(""); // NOI18N
 
         btn2DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
@@ -118,6 +128,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btn3GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         btn3AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn3AChair.setName("A3"); // NOI18N
 
         btn3BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
@@ -134,6 +145,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btn4DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         btn4AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn4AChair.setName("A4"); // NOI18N
 
         btn4BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
@@ -148,6 +160,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btn5DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
         btn5AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn5AChair.setName("A5"); // NOI18N
 
         btn5BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
 
@@ -514,9 +527,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
                         .addComponent(btnModify, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(57, 57, 57)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -527,7 +538,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSellingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSellingActionPerformed
-        FrmSelling selling = new FrmSelling();
+        FrmSelling selling = new FrmSelling(seatNames);
         selling.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnSellingActionPerformed
@@ -542,6 +553,38 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         sales.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnShowSalesActionPerformed
+
+	private void seatSelection(){
+
+		JButton[] buttonss = {btn1AChair, btn1BChair, btn1CChair, btn1DChair, btn1EChair, btn1FChair, btn1GChair,
+			btn2AChair, btn2BChair, btn2CChair, btn2DChair, btn2EChair, btn2FChair, btn2GChair,
+			btn3AChair, btn3BChair, btn3CChair, btn3DChair, btn3EChair, btn3FChair, btn3GChair,
+			btn4AChair, btn4BChair, btn4CChair, btn4DChair, btn4EChair, btn4FChair, btn4GChair,
+			btn5AChair, btn5BChair, btn5CChair, btn5DChair, btn5EChair, btn5FChair, btn5GChair,
+			btn6AChair, btn6BChair, btn6CChair, btn6DChair, btn6EChair, btn6FChair, btn6GChair};
+
+		ActionListener actionListener = new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent event) {
+				Object btnSource = event.getSource();	
+				
+				for(JButton button : buttonss){
+					if((JButton) btnSource == button){
+						seatNames[i] = button.getName();
+						i++;
+					}
+				}
+				System.out.println(btnSource.toString());				
+			}
+		};	
+		fillActionListenerButtons(buttonss, actionListener);
+	}
+
+	private void fillActionListenerButtons(JButton[] buttons, ActionListener actionListener){
+		for (JButton button : buttons) {
+			button.addActionListener(actionListener);
+		}
+	}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1AChair;
