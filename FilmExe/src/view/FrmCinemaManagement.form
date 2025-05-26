@@ -381,7 +381,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
-        <Property name="name" type="java.lang.String" value="B2" noResource="true"/>
+        <Property name="name" type="java.lang.String" value="B1" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn1CChair">
@@ -389,6 +389,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="C1" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn1DChair">
@@ -396,6 +397,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="D1" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn1EChair">
@@ -403,6 +405,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="E1" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn1FChair">
@@ -410,6 +413,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="F1" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn1GChair">
@@ -417,6 +421,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="G1" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn2AChair">
@@ -432,6 +437,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="B2" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn2CChair">
@@ -439,7 +445,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
-        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+        <Property name="name" type="java.lang.String" value="C2" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn2DChair">
@@ -447,6 +453,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="D2" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn2EChair">
@@ -454,6 +461,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="E2" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn2FChair">
@@ -461,6 +469,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="F2" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn2GChair">
@@ -468,6 +477,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="G2" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn3EChair">
@@ -475,6 +485,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="E3" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn3FChair">
@@ -482,6 +493,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="F3" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn3GChair">
@@ -489,6 +501,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="G3" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn3AChair">
@@ -504,6 +517,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="B3" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn3CChair">
@@ -511,6 +525,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="C3" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn3DChair">
@@ -518,6 +533,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="D3" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn4EChair">
@@ -525,6 +541,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="E4" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn4GChair">
@@ -532,6 +549,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="G4" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn4FChair">
@@ -539,6 +557,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="F4" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn4DChair">
@@ -546,6 +565,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="D4" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn4AChair">
@@ -561,6 +581,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="B4" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn4CChair">
@@ -568,6 +589,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="C4" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn5FChair">
@@ -575,6 +597,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="F5" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn5EChair">
@@ -582,6 +605,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="E5" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn5GChair">
@@ -589,6 +613,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="G5" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn5DChair">
@@ -596,6 +621,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="D5" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn5AChair">
@@ -611,6 +637,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="B5" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn5CChair">
@@ -618,6 +645,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="C5" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn6FChair">
@@ -625,6 +653,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="F6" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn6EChair">
@@ -632,6 +661,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="E6" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn6GChair">
@@ -639,6 +669,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="G6" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn6DChair">
@@ -646,6 +677,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="D6" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn6AChair">
@@ -653,6 +685,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="A6" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn6BChair">
@@ -660,6 +693,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="B6" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btn6CChair">
@@ -667,6 +701,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/Images/IconoAsientoPeque&#xf1;o.png"/>
         </Property>
+        <Property name="name" type="java.lang.String" value="C6" noResource="true"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">

@@ -94,92 +94,127 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1920, 1080));
 
         btn1BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
-        btn1BChair.setName("B2"); // NOI18N
+        btn1BChair.setName("B1"); // NOI18N
 
         btn1CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn1CChair.setName("C1"); // NOI18N
 
         btn1DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn1DChair.setName("D1"); // NOI18N
 
         btn1EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn1EChair.setName("E1"); // NOI18N
 
         btn1FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn1FChair.setName("F1"); // NOI18N
 
         btn1GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn1GChair.setName("G1"); // NOI18N
 
         btn2AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn2AChair.setName("A2"); // NOI18N
 
         btn2BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn2BChair.setName("B2"); // NOI18N
 
         btn2CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
-        btn2CChair.setName(""); // NOI18N
+        btn2CChair.setName("C2"); // NOI18N
 
         btn2DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn2DChair.setName("D2"); // NOI18N
 
         btn2EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn2EChair.setName("E2"); // NOI18N
 
         btn2FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn2FChair.setName("F2"); // NOI18N
 
         btn2GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn2GChair.setName("G2"); // NOI18N
 
         btn3EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn3EChair.setName("E3"); // NOI18N
 
         btn3FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn3FChair.setName("F3"); // NOI18N
 
         btn3GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn3GChair.setName("G3"); // NOI18N
 
         btn3AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn3AChair.setName("A3"); // NOI18N
 
         btn3BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn3BChair.setName("B3"); // NOI18N
 
         btn3CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn3CChair.setName("C3"); // NOI18N
 
         btn3DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn3DChair.setName("D3"); // NOI18N
 
         btn4EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn4EChair.setName("E4"); // NOI18N
 
         btn4GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn4GChair.setName("G4"); // NOI18N
 
         btn4FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn4FChair.setName("F4"); // NOI18N
 
         btn4DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn4DChair.setName("D4"); // NOI18N
 
         btn4AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn4AChair.setName("A4"); // NOI18N
 
         btn4BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn4BChair.setName("B4"); // NOI18N
 
         btn4CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn4CChair.setName("C4"); // NOI18N
 
         btn5FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn5FChair.setName("F5"); // NOI18N
 
         btn5EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn5EChair.setName("E5"); // NOI18N
 
         btn5GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn5GChair.setName("G5"); // NOI18N
 
         btn5DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn5DChair.setName("D5"); // NOI18N
 
         btn5AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn5AChair.setName("A5"); // NOI18N
 
         btn5BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn5BChair.setName("B5"); // NOI18N
 
         btn5CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn5CChair.setName("C5"); // NOI18N
 
         btn6FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn6FChair.setName("F6"); // NOI18N
 
         btn6EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn6EChair.setName("E6"); // NOI18N
 
         btn6GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn6GChair.setName("G6"); // NOI18N
 
         btn6DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn6DChair.setName("D6"); // NOI18N
 
         btn6AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn6AChair.setName("A6"); // NOI18N
 
         btn6BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn6BChair.setName("B6"); // NOI18N
 
         btn6CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        btn6CChair.setName("C6"); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setText("A");
