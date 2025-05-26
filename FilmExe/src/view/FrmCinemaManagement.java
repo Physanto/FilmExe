@@ -294,7 +294,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         });
 
         btnAddSeatsFromHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoGrande.png"))); // NOI18N
-        btnAddSeatsFromHome.setText("AGR. ASIENTOS");
+        btnAddSeatsFromHome.setText("ASIENTOS Y CLIENTES");
         btnAddSeatsFromHome.setBorder(null);
         btnAddSeatsFromHome.setContentAreaFilled(false);
         btnAddSeatsFromHome.addActionListener(new java.awt.event.ActionListener() {
@@ -308,7 +308,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(727, Short.MAX_VALUE)
+                .addContainerGap(717, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(43, 43, 43)

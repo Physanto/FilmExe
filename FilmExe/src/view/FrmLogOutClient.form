@@ -186,6 +186,7 @@
         <Component class="javax.swing.JButton" name="btnRegisterClient">
           <Properties>
             <Property name="text" type="java.lang.String" value="Registrar"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegisterClientActionPerformed"/>
@@ -248,6 +249,7 @@
         <Component class="javax.swing.JButton" name="btnAddAllSeats">
           <Properties>
             <Property name="text" type="java.lang.String" value="Agregar Asientos"/>
+            <Property name="contentAreaFilled" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddAllSeatsActionPerformed"/>
@@ -258,6 +260,7 @@
     <Component class="javax.swing.JButton" name="btnAddSeats">
       <Properties>
         <Property name="text" type="java.lang.String" value="Agregar Asientos"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddSeatsActionPerformed"/>
@@ -266,6 +269,7 @@
     <Component class="javax.swing.JButton" name="btnAddClients">
       <Properties>
         <Property name="text" type="java.lang.String" value="Agregar Clientes"/>
+        <Property name="contentAreaFilled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnAddClientsActionPerformed"/>

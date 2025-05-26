@@ -31,6 +31,8 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         personController = new PersonController();
         seatController = new SeatController();
         btnGetBackHome4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAddSeats.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAddClients.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         showTable();
     }
 
@@ -90,6 +92,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         jLabel5.setText("Ingrese los datos del cliente");
 
         btnRegisterClient.setText("Registrar");
+        btnRegisterClient.setContentAreaFilled(false);
         btnRegisterClient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegisterClientActionPerformed(evt);
@@ -164,6 +167,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         );
 
         btnAddAllSeats.setText("Agregar Asientos");
+        btnAddAllSeats.setContentAreaFilled(false);
         btnAddAllSeats.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddAllSeatsActionPerformed(evt);
@@ -188,6 +192,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         );
 
         btnAddSeats.setText("Agregar Asientos");
+        btnAddSeats.setContentAreaFilled(false);
         btnAddSeats.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddSeatsActionPerformed(evt);
@@ -195,6 +200,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         });
 
         btnAddClients.setText("Agregar Clientes");
+        btnAddClients.setContentAreaFilled(false);
         btnAddClients.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddClientsActionPerformed(evt);

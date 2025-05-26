@@ -95,6 +95,7 @@ public class FrmSelling extends javax.swing.JFrame {
         });
 
         btnLogOutClient.setText("Registrar Cliente");
+        btnLogOutClient.setContentAreaFilled(false);
         btnLogOutClient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLogOutClientActionPerformed(evt);
@@ -102,6 +103,7 @@ public class FrmSelling extends javax.swing.JFrame {
         });
 
         btnSearchClient.setText("Buscar");
+        btnSearchClient.setContentAreaFilled(false);
         btnSearchClient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSearchClientActionPerformed(evt);
@@ -118,9 +120,9 @@ public class FrmSelling extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(271, 271, 271)
+                        .addGap(150, 150, 150)
                         .addComponent(btnGetBackHome)
-                        .addGap(251, 251, 251)
+                        .addGap(372, 372, 372)
                         .addComponent(btnSell))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(517, 517, 517)
@@ -183,9 +185,7 @@ public class FrmSelling extends javax.swing.JFrame {
                 .addComponent(txtClientCCSearching, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnSearchClient)
-                .addGap(75, 293, Short.MAX_VALUE)
-                .addComponent(btnGetBackHome)
-                .addGap(323, 323, 323))
+                .addGap(323, 718, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(71, 71, 71)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -227,9 +227,15 @@ public class FrmSelling extends javax.swing.JFrame {
                     .addComponent(txtEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addComponent(txtClientEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(87, 87, 87)
-                .addComponent(btnSell)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(btnSell)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnGetBackHome)
+                        .addGap(185, 185, 185))))
         );
 
         pack();
