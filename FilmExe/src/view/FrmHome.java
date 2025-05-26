@@ -1,5 +1,7 @@
 package view;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 public class FrmHome extends javax.swing.JFrame {
@@ -17,13 +19,19 @@ public class FrmHome extends javax.swing.JFrame {
 
         labelHomeTitle = new javax.swing.JLabel();
         btnLogIn = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
+        getContentPane().setLayout(null);
 
-        labelHomeTitle.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        labelHomeTitle.setFont(new java.awt.Font("Impact", 3, 36)); // NOI18N
+        labelHomeTitle.setForeground(new java.awt.Color(0, 0, 0));
         labelHomeTitle.setText(" Bienvenido a FilmExe");
+        getContentPane().add(labelHomeTitle);
+        labelHomeTitle.setBounds(600, 290, 347, 45);
 
+        btnLogIn.setForeground(new java.awt.Color(0, 0, 0));
         btnLogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonEntrarSistema.png"))); // NOI18N
         btnLogIn.setText("INICIAR");
         btnLogIn.setBorder(null);
@@ -33,30 +41,13 @@ public class FrmHome extends javax.swing.JFrame {
                 btnLogInActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLogIn);
+        btnLogIn.setBounds(690, 370, 145, 100);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(663, 663, 663)
-                        .addComponent(btnLogIn))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(635, 635, 635)
-                        .addComponent(labelHomeTitle)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(253, 253, 253)
-                .addComponent(labelHomeTitle)
-                .addGap(123, 123, 123)
-                .addComponent(btnLogIn)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PantallaDeInicio.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(-80, -60, 1770, 1100);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -67,7 +58,7 @@ public class FrmHome extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnLogInActionPerformed
     public static void main(String args[]) {
-  
+
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new FrmHome().setVisible(true);
@@ -76,6 +67,7 @@ public class FrmHome extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLogIn;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel labelHomeTitle;
     // End of variables declaration//GEN-END:variables
 }
