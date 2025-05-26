@@ -37,17 +37,5 @@ public class SeatDAO {
             return new Seat(resultSet.getInt("id"), name, resultSet.getDouble("price"));
         }
         return null;
-    }
-
-	public int countSeats(){
-		sql = "SELECT COUNT(*) FROM seat";
-		resultSet = executeSql.executeQuery(sql);
-		
-		int cantRow = resultSet.la;
-
-		if()
-		if(resultSet.next()){		
-
-		}
-	}
+    }	
 }

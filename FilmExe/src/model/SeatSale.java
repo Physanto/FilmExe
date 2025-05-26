@@ -5,11 +5,11 @@ package model;
  *
  * @author initmanfig
  */
-public class SaleSeat {
+public class SeatSale {
 	private int id;
 	private double price;	
 
-	public SaleSeat(int id, double price) {
+	public SeatSale(int id, double price) {
 		this.id = id;
 		this.price = price;
 	}
