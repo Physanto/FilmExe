@@ -2,13 +2,14 @@ package view;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class FrmCinemaManagement extends javax.swing.JFrame {
 
-    private String[] seatNames = new String[42];
+    private ArrayList<String> seatNames = new ArrayList<>();
     private int i = 0;
 
     public FrmCinemaManagement() {
@@ -611,7 +612,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
 
                 for (JButton button : buttonss) {
                     if ((JButton) btnSource == button) {
-                        seatNames[i] = button.getName();
+                        seatNames.add(button.getName());
                         i++;
                     }
                 }

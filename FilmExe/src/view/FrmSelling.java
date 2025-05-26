@@ -1,18 +1,24 @@
 package view;
 
 import controller.PersonController;
+import controller.SeatController;
+import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import model.Person;
+import model.Seat;
 
 public class FrmSelling extends javax.swing.JFrame {
 
-    private String[] seatNames;
+    private ArrayList<String> seatNames;
     private PersonController personController;
+	private SeatController seatController;
 
-    public FrmSelling(String[] seatNames) {
+    public FrmSelling(ArrayList<String> seatNames) {
+
         initComponents();
         personController = new PersonController();
+		seatController = new SeatController();
         this.seatNames = seatNames;
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setVisible(true);
@@ -20,6 +26,8 @@ public class FrmSelling extends javax.swing.JFrame {
         btnSell.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnLogOutClient.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSearchClient.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		showSelectedSeats();
+		searchSeat();
     }
 
     @SuppressWarnings("unchecked")
@@ -48,6 +56,9 @@ public class FrmSelling extends javax.swing.JFrame {
         txtEndDate = new javax.swing.JTextField();
         txtStardDate = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        listSelectedSeats = new javax.swing.JList<>();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
@@ -113,6 +124,11 @@ public class FrmSelling extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel7.setText("Ingresa la cedula del cliente");
 
+        jScrollPane1.setViewportView(listSelectedSeats);
+
+        jLabel8.setFont(new java.awt.Font("CaskaydiaCove NF", 1, 18)); // NOI18N
+        jLabel8.setText("Asientos Seleccionados");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -125,7 +141,14 @@ public class FrmSelling extends javax.swing.JFrame {
                         .addGap(372, 372, 372)
                         .addComponent(btnSell))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(517, 517, 517)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(87, 87, 87)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(30, 30, 30)
+                                .addComponent(jLabel8)))
+                        .addGap(304, 304, 304)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(22, 22, 22)
@@ -174,7 +197,7 @@ public class FrmSelling extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(241, 241, 241)
                                 .addComponent(btnLogOutClient)))))
-                .addContainerGap(477, Short.MAX_VALUE))
+                .addContainerGap(418, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -187,13 +210,18 @@ public class FrmSelling extends javax.swing.JFrame {
                 .addComponent(btnSearchClient)
                 .addGap(323, 718, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(71, 71, 71)
+                .addGap(76, 76, 76)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addComponent(jLabel2)
-                        .addGap(32, 32, 32)
-                        .addComponent(jLabel1)
+                        .addGap(7, 7, 7)
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(32, 32, 32)
+                                .addComponent(jLabel1))
+                            .addComponent(jScrollPane1))
                         .addGap(13, 13, 13)
                         .addComponent(jLabel5))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -299,6 +327,35 @@ public class FrmSelling extends javax.swing.JFrame {
         txtClientEmail.setText(person.getEmail());
     }//GEN-LAST:event_btnSearchClientActionPerformed
 
+	private void showSelectedSeats(){
+		String[] names = new String[seatNames.size()];
+		String concat = "";
+
+		for(int i = 0; i < seatNames.size(); i++){
+			names[i] = seatNames.get(i);
+			concat += names[i] + ", ";	
+		}
+
+		listSelectedSeats.setListData(names);
+		txtChairName.setText(concat);
+	}
+
+	/**
+	 * method that search in the list seats y return all id for are compared with the sale
+	 */
+	private void searchSeat(){
+
+		ArrayList<Seat> seats = seatController.searchSeats(seatNames);
+		int[] idSeats = new int[seats.size()];
+
+		for(int i = 0; i < seats.size(); i++){		
+			
+			if(seats.get(i) == null) continue;
+			idSeats[i] = seats.get(i).getId();
+			System.out.println("asiento encontrado" + idSeats[i]);
+		}
+	}
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGetBackHome;
     private javax.swing.JButton btnLogOutClient;
@@ -311,6 +368,9 @@ public class FrmSelling extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JList<String> listSelectedSeats;
     private javax.swing.JTextField txtChairName;
     private javax.swing.JTextField txtChairPrice;
     private javax.swing.JTextField txtClientAddress;

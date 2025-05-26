@@ -5,6 +5,7 @@
 package controller;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import model.Seat;
 import model.SeatDAO;
 
@@ -28,6 +29,14 @@ public class SeatController {
 
         try {
             return seatDAO.searchSeat(name);
+        } catch (SQLException ex) {
+            return null;
+        }
+    }
+	public ArrayList<Seat> searchSeats(ArrayList<String> names) {
+
+        try {
+            return seatDAO.searchSeats(names);
         } catch (SQLException ex) {
             return null;
         }

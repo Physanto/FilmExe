@@ -3,6 +3,7 @@ package model;
 import database.ExecuteSql;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class SeatDAO {
 
@@ -34,8 +35,24 @@ public class SeatDAO {
         resultSet = executeSql.executeQuery(sql);
 
         if (resultSet.next()) {
-            return new Seat(resultSet.getInt("id"), name, resultSet.getDouble("price"));
+            return new Seat(resultSet.getInt(1), name, resultSet.getDouble(3));
         }
         return null;
     }	
+
+	public ArrayList<Seat> searchSeats(ArrayList<String> names) throws SQLException {
+		ArrayList<Seat> seats = new ArrayList<>();
+
+		for(String name : names){
+			sql = "SELECT * FROM seat WHERE name = '"+name+"'";
+
+        	resultSet = executeSql.executeQuery(sql);
+
+        	if (resultSet.next()) {	
+            	seats.add(new Seat(resultSet.getInt(1), resultSet.getString(2), resultSet.getDouble(3)));
+        	}
+			resultSet.close();
+		}    
+		return seats;
+    }
 }
