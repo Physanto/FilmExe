@@ -6,11 +6,10 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-
 public class FrmCinemaManagement extends javax.swing.JFrame {
 
-	private String[] seatNames = new String[42];
-	private int i = 0;
+    private String[] seatNames = new String[42];
+    private int i = 0;
 
     public FrmCinemaManagement() {
         initComponents();
@@ -20,7 +19,8 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnModify.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnShowSales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-		seatSelection();
+        seatSelection();
+        btnAddSeatsFromHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
     }
 
     @SuppressWarnings("unchecked")
@@ -88,6 +88,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         btnShowSales = new javax.swing.JButton();
+        btnAddSeatsFromHome = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
@@ -265,12 +266,22 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
             }
         });
 
+        btnAddSeatsFromHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoGrande.png"))); // NOI18N
+        btnAddSeatsFromHome.setText("AGR. ASIENTOS");
+        btnAddSeatsFromHome.setBorder(null);
+        btnAddSeatsFromHome.setContentAreaFilled(false);
+        btnAddSeatsFromHome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddSeatsFromHomeActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(727, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(43, 43, 43)
@@ -397,141 +408,140 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
                                 .addComponent(btn4EChair)
                                 .addGap(47, 47, 47)
                                 .addComponent(btn4FChair)))))
-                .addGap(88, 88, 88)
+                .addGap(92, 92, 92)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnSelling, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnModify, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(124, 124, 124))
+                    .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAddSeatsFromHome)
+                    .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(115, 115, 115))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel1)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel16)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel16)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(btn1BChair)
-                                                .addComponent(btn1CChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(btn1DChair)
-                                                .addComponent(btn1EChair, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(btn1FChair, javax.swing.GroupLayout.Alignment.TRAILING)))
-                                        .addComponent(btn1AChair))
-                                    .addComponent(jLabel9))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(btn2AChair)
-                                                    .addComponent(btn2BChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(btn2CChair)
-                                                    .addComponent(btn2DChair)))
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(btn2EChair)
-                                                .addComponent(btn2FChair, javax.swing.GroupLayout.Alignment.TRAILING)))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(btn3AChair)
-                                                    .addComponent(btn3BChair, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel11))
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(btn3CChair)
-                                                    .addComponent(btn3DChair)))
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(btn3EChair)
-                                                .addComponent(btn3FChair, javax.swing.GroupLayout.Alignment.TRAILING))))
-                                    .addComponent(jLabel10))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn4AChair)
-                                            .addComponent(btn4BChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn4CChair)
-                                            .addComponent(btn4DChair)))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btn4EChair)
-                                        .addComponent(btn4FChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                    .addComponent(jLabel12))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn5AChair)
-                                            .addComponent(btn5BChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn5CChair)
-                                            .addComponent(btn5DChair)))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btn5EChair)
-                                        .addComponent(btn5FChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                    .addComponent(jLabel13))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn6AChair)
-                                            .addComponent(btn6BChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn6CChair)
-                                            .addComponent(btn6DChair)))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btn6EChair)
-                                        .addComponent(btn6FChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                    .addComponent(jLabel15)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn1GChair)
-                                .addGap(18, 18, 18)
-                                .addComponent(btn2GChair)
-                                .addGap(18, 18, 18)
-                                .addComponent(btn3GChair)
-                                .addGap(18, 18, 18)
-                                .addComponent(btn4GChair)
-                                .addGap(18, 18, 18)
-                                .addComponent(btn5GChair)
-                                .addGap(18, 18, 18)
-                                .addComponent(btn6GChair)))
-                        .addGap(40, 40, 40))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(52, 52, 52)
-                        .addComponent(btnSelling, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(65, 65, 65)
-                        .addComponent(btnModify, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(57, 57, 57)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(btn1BChair)
+                                        .addComponent(btn1CChair, javax.swing.GroupLayout.Alignment.TRAILING))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(btn1DChair)
+                                        .addComponent(btn1EChair, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(btn1FChair, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                .addComponent(btn1AChair))
+                            .addComponent(jLabel9))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(169, 169, 169))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(btn2AChair)
+                                            .addComponent(btn2BChair, javax.swing.GroupLayout.Alignment.TRAILING))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(btn2CChair)
+                                            .addComponent(btn2DChair)))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(btn2EChair)
+                                        .addComponent(btn2FChair, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(btn3AChair)
+                                            .addComponent(btn3BChair, javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel11))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(btn3CChair)
+                                            .addComponent(btn3DChair)))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(btn3EChair)
+                                        .addComponent(btn3FChair, javax.swing.GroupLayout.Alignment.TRAILING))))
+                            .addComponent(jLabel10))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btn4AChair)
+                                    .addComponent(btn4BChair, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btn4CChair)
+                                    .addComponent(btn4DChair)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(btn4EChair)
+                                .addComponent(btn4FChair, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(jLabel12))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btn5AChair)
+                                    .addComponent(btn5BChair, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btn5CChair)
+                                    .addComponent(btn5DChair)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(btn5EChair)
+                                .addComponent(btn5FChair, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(jLabel13))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btn6AChair)
+                                    .addComponent(btn6BChair, javax.swing.GroupLayout.Alignment.TRAILING))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btn6CChair)
+                                    .addComponent(btn6DChair)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(btn6EChair)
+                                .addComponent(btn6FChair, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(jLabel15)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 38, Short.MAX_VALUE)
+                        .addComponent(jLabel8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btn1GChair)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn2GChair)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn3GChair)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn4GChair)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn5GChair)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn6GChair)))
+                .addGap(40, 40, 40))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnSelling, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(btnModify, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57)
+                .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(45, 45, 45)
+                .addComponent(btnAddSeatsFromHome)
+                .addGap(30, 30, 30)
+                .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -554,37 +564,43 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnShowSalesActionPerformed
 
-	private void seatSelection(){
+    private void btnAddSeatsFromHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddSeatsFromHomeActionPerformed
+        FrmLogOutClient addSeats = new FrmLogOutClient();
+        addSeats.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnAddSeatsFromHomeActionPerformed
 
-		JButton[] buttonss = {btn1AChair, btn1BChair, btn1CChair, btn1DChair, btn1EChair, btn1FChair, btn1GChair,
-			btn2AChair, btn2BChair, btn2CChair, btn2DChair, btn2EChair, btn2FChair, btn2GChair,
-			btn3AChair, btn3BChair, btn3CChair, btn3DChair, btn3EChair, btn3FChair, btn3GChair,
-			btn4AChair, btn4BChair, btn4CChair, btn4DChair, btn4EChair, btn4FChair, btn4GChair,
-			btn5AChair, btn5BChair, btn5CChair, btn5DChair, btn5EChair, btn5FChair, btn5GChair,
-			btn6AChair, btn6BChair, btn6CChair, btn6DChair, btn6EChair, btn6FChair, btn6GChair};
+    private void seatSelection() {
 
-		ActionListener actionListener = new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent event) {
-				Object btnSource = event.getSource();	
-				
-				for(JButton button : buttonss){
-					if((JButton) btnSource == button){
-						seatNames[i] = button.getName();
-						i++;
-					}
-				}
-				System.out.println(btnSource.toString());				
-			}
-		};	
-		fillActionListenerButtons(buttonss, actionListener);
-	}
+        JButton[] buttonss = {btn1AChair, btn1BChair, btn1CChair, btn1DChair, btn1EChair, btn1FChair, btn1GChair,
+            btn2AChair, btn2BChair, btn2CChair, btn2DChair, btn2EChair, btn2FChair, btn2GChair,
+            btn3AChair, btn3BChair, btn3CChair, btn3DChair, btn3EChair, btn3FChair, btn3GChair,
+            btn4AChair, btn4BChair, btn4CChair, btn4DChair, btn4EChair, btn4FChair, btn4GChair,
+            btn5AChair, btn5BChair, btn5CChair, btn5DChair, btn5EChair, btn5FChair, btn5GChair,
+            btn6AChair, btn6BChair, btn6CChair, btn6DChair, btn6EChair, btn6FChair, btn6GChair};
 
-	private void fillActionListenerButtons(JButton[] buttons, ActionListener actionListener){
-		for (JButton button : buttons) {
-			button.addActionListener(actionListener);
-		}
-	}
+        ActionListener actionListener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent event) {
+                Object btnSource = event.getSource();
+
+                for (JButton button : buttonss) {
+                    if ((JButton) btnSource == button) {
+                        seatNames[i] = button.getName();
+                        i++;
+                    }
+                }
+                System.out.println(btnSource.toString());
+            }
+        };
+        fillActionListenerButtons(buttonss, actionListener);
+    }
+
+    private void fillActionListenerButtons(JButton[] buttons, ActionListener actionListener) {
+        for (JButton button : buttons) {
+            button.addActionListener(actionListener);
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn1AChair;
@@ -629,6 +645,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
     private javax.swing.JButton btn6EChair;
     private javax.swing.JButton btn6FChair;
     private javax.swing.JButton btn6GChair;
+    private javax.swing.JButton btnAddSeatsFromHome;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnModify;
     private javax.swing.JButton btnSelling;

@@ -4,11 +4,12 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 public class FrmSelling extends javax.swing.JFrame {
-	private String[] seatNames;
+
+    private String[] seatNames;
 
     public FrmSelling(String[] seatNames) {
         initComponents();
-		this.seatNames = seatNames;
+        this.seatNames = seatNames;
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setVisible(true);
         btnGetBackHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -49,6 +50,8 @@ public class FrmSelling extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel2.setText("Silla Solicitada");
+
+        txtChairName.setEnabled(false);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel3.setText("Datos cliente");
@@ -100,13 +103,12 @@ public class FrmSelling extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(539, 539, 539)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(539, 539, 539)
                                 .addComponent(jLabel2)
                                 .addGap(170, 170, 170))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(100, 100, 100)
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(191, 191, 191)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -131,12 +133,10 @@ public class FrmSelling extends javax.swing.JFrame {
                                 .addComponent(btnGetBackHome)
                                 .addGap(690, 690, 690))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel6)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jLabel6))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(txtChairPrice, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(txtChairName, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -227,8 +227,15 @@ public class FrmSelling extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Llena todos los campos del cliente para realizar la venta");
             return;
         }
-        if(!Validator.lengthBetween(txtClientCC.getText(), 8, 10) || Validator.lengthBetween(txt, HEIGHT, HEIGHT)){
+        if (!Validator.lengthBetween(txtClientCC.getText(), 8, 10) || Validator.lengthBetween(txtClientName.getText(), 4, 15)
+                || Validator.lengthBetween(txtClientLastName.getText(), 4, 20) || Validator.lengthBetween(txtClientPhone.getText(), 10, 15)
+                || Validator.lengthBetween(txtClientAddress.getText(), 10, 200) || Validator.lengthBetween(txtClientEmail.getText(), 10, 255)) {
             JOptionPane.showMessageDialog(this, "Verifique la longitud de los datos");
+            return;
+        }
+        if(!Validator.isNumber(txtChairPrice.getText()) && !Validator.isNumberPositive(txtChairPrice.getText())){
+            JOptionPane.showMessageDialog(this, "Ingresa datos validos");
+            return;
         }
         FrmReceipt receipt = new FrmReceipt();
         receipt.setVisible(true);

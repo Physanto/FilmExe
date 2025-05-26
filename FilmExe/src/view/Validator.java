@@ -45,4 +45,19 @@ public class Validator {
     public static boolean lengthBetween(String text, int lengthMin, int lengthMax) {
         return !isEmpty(text) && (text.length() >= lengthMin && text.length() <= lengthMax);
     }
+
+    /**
+     * Checks if given number is valid(¿Is it positive?).
+     *
+     * @param text is string to evaluate
+     * @return true if the number is positive.
+     */
+    public static boolean isNumberPositive(String text) {
+        try {
+            return Double.parseDouble(text) >= 0;
+        }
+        catch(NumberFormatException ex){
+            return false;
+        }
+    }
 }
