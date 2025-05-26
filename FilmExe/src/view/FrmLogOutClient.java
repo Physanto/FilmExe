@@ -152,9 +152,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
     }//GEN-LAST:event_txtLogOutClientCCActionPerformed
 
     private void btnGetBackHome4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGetBackHome4ActionPerformed
-        FrmSelling selling = new FrmSelling();
-        selling.setVisible(true);
-        this.dispose();
+        
     }//GEN-LAST:event_btnGetBackHome4ActionPerformed
 
     private void btnRegisterClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterClientActionPerformed
