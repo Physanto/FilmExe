@@ -190,16 +190,16 @@ public class FrmSelling extends javax.swing.JFrame {
                 .addGap(71, 71, 71)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(41, 41, 41)
+                        .addComponent(jLabel2)
+                        .addGap(32, 32, 32)
                         .addComponent(jLabel1)
                         .addGap(13, 13, 13)
                         .addComponent(jLabel5))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(btnLogOutClient)
                         .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel3))
+                            .addComponent(jLabel3)
                             .addGap(31, 31, 31)
                             .addComponent(jLabel4))))
                 .addGap(12, 12, 12)
@@ -277,7 +277,12 @@ public class FrmSelling extends javax.swing.JFrame {
         Person person = personController.searchPerson(txtClientCCSearching.getText());
 
 		if(person == null){
-			int option = JOptionPane.showConfirmDialog(this, "persona no registrada, registralo");
+			int option = JOptionPane.showConfirmDialog(this, "Persona no registrada con esa identificacion, ¿Desea registrarlo?");
+                        if(option == 0){
+                            FrmLogOutClient register = new FrmLogOutClient();
+                            register.setVisible(true);
+                            this.dispose();
+                        }
 			return;
 		}
         txtClientCC.setText(person.getCc());
