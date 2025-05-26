@@ -3,6 +3,9 @@ package view;
 import controller.SeatController;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+import controller.PersonController;
+import model.Person;
 
 /**
  *
@@ -10,7 +13,12 @@ import javax.swing.JOptionPane;
  */
 public class FrmLogOutClient extends javax.swing.JFrame {
 
-	private SeatController seatController;
+    private SeatController seatController;
+    DefaultTableModel tableClients2;
+    String[] columns = {"Id", "Cedula", "Nombres", "Apellidos", "Numero", "Direccion", "Email"};
+    PersonController personController;
+    Object data[][];
+
     /**
      * Creates new form FrmLogOutClient
      */
@@ -20,7 +28,20 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         this.setVisible(true);
         panelAddClients.setVisible(false);
         panelAddSeats.setVisible(false);
-		seatController = new SeatController();
+        personController = new PersonController();
+        seatController = new SeatController();
+        showTable();
+    }
+
+    public void showTable() {
+        data = personController.showAllPerson();
+        if(data == null){
+            System.out.println("vacio");
+        }
+        tableClients2 = new DefaultTableModel(data, columns);
+        tableClients.setModel(tableClients2);
+        tableClients.validate();
+        tableClients.repaint();
     }
 
     /**
@@ -46,6 +67,9 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         btnAddAllSeats = new javax.swing.JButton();
         btnAddSeats = new javax.swing.JButton();
         btnAddClients = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tableClients = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -175,6 +199,22 @@ public class FrmLogOutClient extends javax.swing.JFrame {
             }
         });
 
+        tableClients.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(tableClients);
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel1.setText("Clientes existentes en la base de datos");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -182,69 +222,86 @@ public class FrmLogOutClient extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(171, 171, 171)
-                        .addComponent(btnGetBackHome4)
-                        .addGap(258, 258, 258)
-                        .addComponent(btnAddSeats)
-                        .addGap(138, 138, 138))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(279, 279, 279)
                         .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(15, 15, 15)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGap(41, 41, 41)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(panelAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(63, 63, 63)
+                                .addComponent(btnAddClients)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(100, 100, 100)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(179, 179, 179)
+                                .addComponent(jLabel1))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(244, 244, 244)
-                        .addComponent(panelAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 306, Short.MAX_VALUE)
-                        .addComponent(btnAddClients)
-                        .addGap(660, 660, 660))))
+                        .addGap(49, 49, 49)
+                        .addComponent(btnGetBackHome4)
+                        .addGap(173, 173, 173)
+                        .addComponent(btnAddSeats)))
+                .addGap(454, 454, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(56, 56, 56)
+                        .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addComponent(jLabel1)
+                        .addGap(29, 29, 29)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(panelAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(55, 55, 55)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnAddSeats)
+                    .addComponent(btnAddClients))
+                .addContainerGap(375, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(698, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(btnGetBackHome4)
-                .addGap(280, 280, 280))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(128, 128, 128)
-                        .addComponent(panelAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnAddClients))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(110, 110, 110)
-                        .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnAddSeats)))
-                .addGap(264, 264, 264))
+                .addGap(297, 297, 297))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void txtLogOutClientCCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLogOutClientCCActionPerformed
-        if(Validator.isEmpty(txtLogOutClientCC.getText()) && Validator.isEmpty(txtLogOutClientName.getText()) &&
-            Validator.isEmpty(txtLogOutClientLastName.getText()) && Validator.isEmpty(txtLogOutClientPhone.getText()) &&
-            Validator.isEmpty(txtLogOutClientAddress.getText()) && Validator.isEmpty(txtLogOutClientEmail.getText())){
+        if (Validator.isEmpty(txtLogOutClientCC.getText()) && Validator.isEmpty(txtLogOutClientName.getText())
+                && Validator.isEmpty(txtLogOutClientLastName.getText()) && Validator.isEmpty(txtLogOutClientPhone.getText())
+                && Validator.isEmpty(txtLogOutClientAddress.getText()) && Validator.isEmpty(txtLogOutClientEmail.getText())) {
             JOptionPane.showMessageDialog(this, "Llena todos los campos para registrar el cliente");
             return;
         }
     }//GEN-LAST:event_txtLogOutClientCCActionPerformed
 
     private void btnGetBackHome4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGetBackHome4ActionPerformed
-        
+
     }//GEN-LAST:event_btnGetBackHome4ActionPerformed
 
     private void btnRegisterClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterClientActionPerformed
-        if(Validator.isEmpty(txtLogOutClientCC.getText()) && Validator.isEmpty(txtLogOutClientName.getText()) &&
-                Validator.isEmpty(txtLogOutClientLastName.getText()) && Validator.isEmpty(txtLogOutClientPhone.getText()) &&
-                Validator.isEmpty(txtLogOutClientAddress.getText()) && Validator.isEmpty(txtLogOutClientEmail.getText())){
+        if (Validator.isEmpty(txtLogOutClientCC.getText()) && Validator.isEmpty(txtLogOutClientName.getText())
+                && Validator.isEmpty(txtLogOutClientLastName.getText()) && Validator.isEmpty(txtLogOutClientPhone.getText())
+                && Validator.isEmpty(txtLogOutClientAddress.getText()) && Validator.isEmpty(txtLogOutClientEmail.getText())) {
             JOptionPane.showMessageDialog(this, "Llena todos los campos para registrar el cliente");
             return;
         }
+        boolean confirm = personController.insertPerson(new Person(txtLogOutClientCC.getText(), txtLogOutClientName.getText(),
+                txtLogOutClientLastName.getText(), txtLogOutClientPhone.getText(), txtLogOutClientAddress.getText(),
+                txtLogOutClientEmail.getText()));
+        if(confirm){
+            System.out.println("se agrego");
+        }else{
+            System.out.println("No se agrego");
+        }
+        showTable();
     }//GEN-LAST:event_btnRegisterClientActionPerformed
 
     private void btnAddSeatsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddSeatsActionPerformed
@@ -259,22 +316,21 @@ public class FrmLogOutClient extends javax.swing.JFrame {
 
     private void btnAddAllSeatsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddAllSeatsActionPerformed
 
-		String[] seats = {"A1", "B1", "C1", "D1", "E1", "F1", "G1",
-			"A2", "B2", "C2", "D2", "E2", "F2", "G2",
-			"A3", "B3", "C3", "D3", "E3", "F3", "G3",
-			"A4", "B4", "C4", "D4", "E4", "F4", "G4",
-			"A5", "B5", "C5", "D5", "E5", "F5", "G5",
-			"A6", "B6", "C6", "D6", "E6", "F6", "G6"
-		};
+        String[] seats = {"A1", "B1", "C1", "D1", "E1", "F1", "G1",
+            "A2", "B2", "C2", "D2", "E2", "F2", "G2",
+            "A3", "B3", "C3", "D3", "E3", "F3", "G3",
+            "A4", "B4", "C4", "D4", "E4", "F4", "G4",
+            "A5", "B5", "C5", "D5", "E5", "F5", "G5",
+            "A6", "B6", "C6", "D6", "E6", "F6", "G6"
+        };
 
-		boolean seatsAdded = seatController.insertAllSeats(seats);
+        boolean seatsAdded = seatController.insertAllSeats(seats);
 
-		if(seatsAdded){
-			JOptionPane.showMessageDialog(this, "asientos agregados correctamente a la base de datos");
-		}
-		else{
-			JOptionPane.showMessageDialog(this, "asientos no agregados");
-		}
+        if (seatsAdded) {
+            JOptionPane.showMessageDialog(this, "asientos agregados correctamente a la base de datos");
+        } else {
+            JOptionPane.showMessageDialog(this, "asientos no agregados");
+        }
     }//GEN-LAST:event_btnAddAllSeatsActionPerformed
 
     /**
@@ -318,11 +374,14 @@ public class FrmLogOutClient extends javax.swing.JFrame {
     private javax.swing.JButton btnAddSeats;
     private javax.swing.JButton btnGetBackHome4;
     private javax.swing.JButton btnRegisterClient;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel panelAddClients;
     private javax.swing.JPanel panelAddSeats;
+    private javax.swing.JTable tableClients;
     private javax.swing.JTextField txtLogOutClientAddress;
     private javax.swing.JTextField txtLogOutClientCC;
     private javax.swing.JTextField txtLogOutClientEmail;

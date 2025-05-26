@@ -88,11 +88,7 @@ public class PersonDAO{
 
 		resultSet = executeSql.executeQuery(sql);
 		
-		int cantRow = resultSet.getRow();
-
-		if(cantRow <= 0) return null;
-
-		Object[][] data = new Object[cantRow][6];
+		Object[][] data = new Object[3][6];
 		
 		int i = 0;
 		while(resultSet.next()){
@@ -106,4 +102,12 @@ public class PersonDAO{
 		}
 		return data;
 	}
+        
+        public int countAllPerson(ResultSet resultSet) throws SQLException {
+            int i = 0;
+            while(resultSet.next()){
+                i++;
+            }
+            return i;
+        }
 }
