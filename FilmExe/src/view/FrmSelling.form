@@ -559,7 +559,6 @@
         </Component>
       </SubComponents>
     </Container>
-<<<<<<< HEAD
     <Component class="javax.swing.JLabel" name="jLabel19">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -610,7 +609,6 @@
         </Constraint>
       </Constraints>
     </Component>
-=======
     <Container class="javax.swing.JPanel" name="pnlReceipt">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -800,6 +798,5 @@
         </Component>
       </SubComponents>
     </Container>
->>>>>>> 8b7f92a051957209b8d858627a88019d08795766
   </SubComponents>
 </Form>
