@@ -20,11 +20,19 @@ public class SaleController {
 		return saleDAO.makeSale(sale, idPerson);
 	}
 
-	public Sale searchSale(int idPerson){
+	public Sale searchSales(int idPerson){
 		try{
-			return saleDAO.searchSale(idPerson);
+			return saleDAO.searchSales(idPerson);
 		}
 		catch(SQLException ex){
+			return null;
+		}
+	}
+
+	public Object[][] searchSale(String cc){
+		try {
+			return saleDAO.searchSale(cc);
+		} catch (Exception e) {
 			return null;
 		}
 	}

@@ -27,7 +27,7 @@ public class SaleDAO {
 		return executeSql.executeDML(sql);
 	}
 
-	public Sale searchSale(int idPerson) throws SQLException{
+	public Sale searchSales(int idPerson) throws SQLException{
 		sql = "SELECT s.* FROM sale s " +
           "WHERE s.person_id = "+idPerson+" " +
           "ORDER BY s.id DESC LIMIT 1";
@@ -45,14 +45,14 @@ public class SaleDAO {
 		
 		Object[][] data = new Object[countAllSale()][5];
 
-		sql = "SELECT p.cc,"
-				+ "p.name,"
-				+ "s.start_date,"
-				+ "s.end_date,"
-				+ "s.total"
-				+ "FROM sale s "
-				+ "JOIN person p ON s.id = p.id "
-				+ "WHERE p.cc = '"+cc+"'";
+		sql = "SELECT p.cc, "
+    		+ "p.name, "
+    		+ "s.start_date, "
+    		+ "s.end_date, "
+    		+ "s.total "
+    		+ "FROM sale s "
+    		+ "JOIN person p ON s.person_id = p.id";
+				//+ "WHERE p.cc = '"+cc+"'";
 		resultSet = executeSql.executeQuery(sql);
 
 		int i = 0;

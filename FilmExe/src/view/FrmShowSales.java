@@ -1,6 +1,5 @@
 package view;
 
-import controller.PersonController;
 import controller.SaleController;
 import javax.swing.JFrame;
 import javax.swing.table.DefaultTableModel;
@@ -9,19 +8,19 @@ public class FrmShowSales extends javax.swing.JFrame {
    
     DefaultTableModel tableSalesModel;
     private SaleController saleController;
-    String[] columns = {"Total", "Fecha compra", "Fecha funcion", "Id Cliente"};
-    Object data[][];
+    String[] columns = {"Cedula", "Nombre", "Fecha Inicial", "Fecha Final", "total"};
     
     public FrmShowSales() {
         initComponents();
+		saleController = new SaleController();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setVisible(true);
         btnGetBackHome2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		showTable();
     }
 
-    public void showTable() {
-		
-        
+    public void showTable() { 
+    	Object data[][] = saleController.searchSale("cd");
         if(data == null){
             System.out.println("vacio");
         }
@@ -46,6 +45,8 @@ public class FrmShowSales extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1920, 1080));
         getContentPane().setLayout(null);
 
+        jScrollPane1.setFont(new java.awt.Font("CaskaydiaCove NF", 0, 15)); // NOI18N
+
         tableSales.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -65,7 +66,7 @@ public class FrmShowSales extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         jLabel1.setText("VENTAS FILMEXE");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(682, 286, 194, 32);
+        jLabel1.setBounds(682, 286, 193, 29);
 
         btnGetBackHome2.setBackground(new java.awt.Color(255, 255, 255));
         btnGetBackHome2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N

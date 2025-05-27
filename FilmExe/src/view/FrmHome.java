@@ -43,7 +43,6 @@ public class FrmHome extends javax.swing.JFrame {
         btnLogIn.setBounds(680, 370, 180, 100);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PantallaDeInicio.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(-80, -60, 1770, 1100);
 

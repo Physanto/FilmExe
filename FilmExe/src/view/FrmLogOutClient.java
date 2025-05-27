@@ -211,7 +211,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         );
 
         getContentPane().add(panelAddClients);
-        panelAddClients.setBounds(546, 190, 300, 517);
+        panelAddClients.setBounds(546, 190, 300, 515);
 
         btnAddAllSeats.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnAddAllSeats.setText("Agregar Asientos");
@@ -251,7 +251,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAddSeats);
-        btnAddSeats.setBounds(270, 710, 150, 27);
+        btnAddSeats.setBounds(270, 710, 150, 23);
 
         btnAddClients.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnAddClients.setText("Agregar Clientes");
@@ -262,7 +262,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAddClients);
-        btnAddClients.setBounds(640, 740, 172, 27);
+        btnAddClients.setBounds(640, 740, 172, 23);
 
         tableClients.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -278,12 +278,12 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tableClients);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(910, 290, 590, 430);
+        jScrollPane1.setBounds(910, 310, 650, 430);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 20)); // NOI18N
         jLabel1.setText("Clientes existentes en la base de datos");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(1030, 250, 360, 25);
+        jLabel1.setBounds(1030, 260, 410, 30);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CortinasCine.png"))); // NOI18N
         jLabel2.setText("jLabel2");
@@ -312,7 +312,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnUpdateClient);
-        btnUpdateClient.setBounds(1020, 740, 160, 27);
+        btnUpdateClient.setBounds(1050, 760, 160, 23);
 
         btnRemoveClient.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnRemoveClient.setText("Eliminar Cliente");
@@ -323,7 +323,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnRemoveClient);
-        btnRemoveClient.setBounds(1250, 740, 130, 27);
+        btnRemoveClient.setBounds(1300, 760, 150, 23);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
