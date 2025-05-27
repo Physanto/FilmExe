@@ -30,9 +30,10 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         panelAddSeats.setVisible(false);
         personController = new PersonController();
         seatController = new SeatController();
-        btnGetBackHome4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGetBackSelling.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAddSeats.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAddClients.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAddSeats.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         showTable();
     }
 
@@ -55,7 +56,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnGetBackHome4 = new javax.swing.JButton();
+        btnGetBackSelling = new javax.swing.JButton();
         panelAddClients = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         txtLogOutClientPhone = new javax.swing.JTextField();
@@ -67,6 +68,12 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         txtLogOutClientCC = new javax.swing.JTextField();
         txtLogOutClientName = new javax.swing.JTextField();
         txtLogOutClientLastName = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
         panelAddSeats = new javax.swing.JPanel();
         btnAddAllSeats = new javax.swing.JButton();
         btnAddSeats = new javax.swing.JButton();
@@ -75,23 +82,25 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         tableClients = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        btnGetBackHome5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnGetBackHome4.setBackground(new java.awt.Color(255, 255, 255));
-        btnGetBackHome4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVolver.png"))); // NOI18N
-        btnGetBackHome4.setText("VOLVER");
-        btnGetBackHome4.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        btnGetBackHome4.setContentAreaFilled(false);
-        btnGetBackHome4.addActionListener(new java.awt.event.ActionListener() {
+        btnGetBackSelling.setBackground(new java.awt.Color(255, 255, 255));
+        btnGetBackSelling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVolver.png"))); // NOI18N
+        btnGetBackSelling.setText("VENTA");
+        btnGetBackSelling.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnGetBackSelling.setContentAreaFilled(false);
+        btnGetBackSelling.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGetBackHome4ActionPerformed(evt);
+                btnGetBackSellingActionPerformed(evt);
             }
         });
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel5.setText("Ingrese los datos del cliente");
 
+        btnRegisterClient.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnRegisterClient.setText("Registrar");
         btnRegisterClient.setContentAreaFilled(false);
         btnRegisterClient.addActionListener(new java.awt.event.ActionListener() {
@@ -112,61 +121,105 @@ public class FrmLogOutClient extends javax.swing.JFrame {
             }
         });
 
+        jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel12.setText("CC");
+
+        jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel13.setText("Nombre");
+
+        jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel14.setText("Apellido");
+
+        jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel15.setText("Telefono");
+
+        jLabel16.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel16.setText("Direccion");
+
+        jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel17.setText("Email");
+
         javax.swing.GroupLayout panelAddClientsLayout = new javax.swing.GroupLayout(panelAddClients);
         panelAddClients.setLayout(panelAddClientsLayout);
         panelAddClientsLayout.setHorizontalGroup(
             panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelAddClientsLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddClientsLayout.createSequentialGroup()
                 .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelAddClientsLayout.createSequentialGroup()
-                        .addContainerGap()
+                        .addContainerGap(76, Short.MAX_VALUE)
                         .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(panelAddClientsLayout.createSequentialGroup()
-                                .addGap(37, 37, 37)
-                                .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtLogOutClientCC)
-                                    .addComponent(txtLogOutClientName)
-                                    .addComponent(txtLogOutClientLastName, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtLogOutClientPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtLogOutClientAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtLogOutClientEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(panelAddClientsLayout.createSequentialGroup()
                                 .addGap(64, 64, 64)
                                 .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jLabel5)))
+                            .addComponent(jLabel5)
+                            .addGroup(panelAddClientsLayout.createSequentialGroup()
+                                .addGap(77, 77, 77)
+                                .addComponent(btnRegisterClient))))
                     .addGroup(panelAddClientsLayout.createSequentialGroup()
-                        .addGap(83, 83, 83)
-                        .addComponent(btnRegisterClient)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelAddClientsLayout.createSequentialGroup()
+                                .addGap(92, 92, 92)
+                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddClientsLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(jLabel15)
+                                    .addComponent(jLabel16)
+                                    .addComponent(jLabel17))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                        .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtLogOutClientCC)
+                            .addComponent(txtLogOutClientName)
+                            .addComponent(txtLogOutClientLastName, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtLogOutClientPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtLogOutClientAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtLogOutClientEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap())
         );
         panelAddClientsLayout.setVerticalGroup(
             panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddClientsLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(panelAddClientsLayout.createSequentialGroup()
                 .addComponent(jLabel3)
                 .addGap(31, 31, 31)
                 .addComponent(jLabel4)
                 .addGap(23, 23, 23)
                 .addComponent(jLabel5)
                 .addGap(12, 12, 12)
-                .addComponent(txtLogOutClientCC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtLogOutClientCC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12))
                 .addGap(18, 18, 18)
-                .addComponent(txtLogOutClientName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtLogOutClientName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13))
                 .addGap(18, 18, 18)
-                .addComponent(txtLogOutClientLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtLogOutClientLastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel14))
                 .addGap(18, 18, 18)
-                .addComponent(txtLogOutClientPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtLogOutClientPhone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel15))
                 .addGap(18, 18, 18)
-                .addComponent(txtLogOutClientAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtLogOutClientAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel16))
                 .addGap(18, 18, 18)
-                .addComponent(txtLogOutClientEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtLogOutClientEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel17))
                 .addGap(43, 43, 43)
                 .addComponent(btnRegisterClient)
-                .addGap(48, 48, 48))
+                .addGap(0, 11, Short.MAX_VALUE))
         );
 
+        btnAddAllSeats.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnAddAllSeats.setText("Agregar Asientos");
         btnAddAllSeats.setContentAreaFilled(false);
         btnAddAllSeats.addActionListener(new java.awt.event.ActionListener() {
@@ -180,9 +233,9 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         panelAddSeatsLayout.setHorizontalGroup(
             panelAddSeatsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddSeatsLayout.createSequentialGroup()
-                .addContainerGap(88, Short.MAX_VALUE)
-                .addComponent(btnAddAllSeats, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(87, 87, 87))
+                .addContainerGap(61, Short.MAX_VALUE)
+                .addComponent(btnAddAllSeats)
+                .addGap(30, 30, 30))
         );
         panelAddSeatsLayout.setVerticalGroup(
             panelAddSeatsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -192,6 +245,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
                 .addContainerGap(52, Short.MAX_VALUE))
         );
 
+        btnAddSeats.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnAddSeats.setText("Agregar Asientos");
         btnAddSeats.setContentAreaFilled(false);
         btnAddSeats.addActionListener(new java.awt.event.ActionListener() {
@@ -200,6 +254,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
             }
         });
 
+        btnAddClients.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnAddClients.setText("Agregar Clientes");
         btnAddClients.setContentAreaFilled(false);
         btnAddClients.addActionListener(new java.awt.event.ActionListener() {
@@ -227,68 +282,83 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CortinasCine.png"))); // NOI18N
         jLabel2.setText("jLabel2");
 
+        btnGetBackHome5.setBackground(new java.awt.Color(255, 255, 255));
+        btnGetBackHome5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVolver.png"))); // NOI18N
+        btnGetBackHome5.setText("PRINCIPAL");
+        btnGetBackHome5.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnGetBackHome5.setContentAreaFilled(false);
+        btnGetBackHome5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGetBackHome5ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(btnGetBackHome4)
-                        .addGap(77, 77, 77)
+                        .addGap(106, 106, 106)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(616, 616, 616))
+                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(92, 92, 92))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(btnAddSeats)
-                                        .addGap(191, 191, 191)))
-                                .addComponent(panelAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(92, 92, 92)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 477, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(86, 86, 86)
-                                        .addComponent(jLabel1))))
+                                .addComponent(btnGetBackSelling, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(20, 20, 20)
+                                .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(479, 479, 479)
-                                .addComponent(btnAddClients))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(104, 104, 104)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1129, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(430, Short.MAX_VALUE))
+                                .addGap(6, 6, 6)
+                                .addComponent(btnGetBackHome5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(84, 84, 84)
+                                .addComponent(btnAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(218, 218, 218)
+                                .addComponent(btnAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(516, 516, 516)
+                                .addComponent(panelAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(120, 120, 120)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 590, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(374, 374, 374))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1)
+                        .addGap(15, 15, 15)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(264, 264, 264)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(145, 145, 145)
-                                .addComponent(jLabel1)
-                                .addGap(18, 18, 18)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(panelAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(97, 97, 97)
-                                        .addComponent(btnAddSeats)))))
-                        .addGap(18, 18, 18)
-                        .addComponent(btnAddClients)
-                        .addContainerGap(315, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(290, 290, 290)
+                                .addComponent(btnGetBackSelling))
+                            .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(30, 30, 30)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnGetBackHome5)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(btnAddSeats))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(184, 184, 184)
+                        .addComponent(panelAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnGetBackHome4)
-                        .addGap(309, 309, 309))))
+                        .addComponent(btnAddClients)
+                        .addGap(28, 28, 28))))
         );
 
         pack();
@@ -303,11 +373,9 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtLogOutClientCCActionPerformed
 
-    private void btnGetBackHome4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGetBackHome4ActionPerformed
-        FrmCinemaManagement getBackHome = new FrmCinemaManagement();
-        getBackHome.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnGetBackHome4ActionPerformed
+    private void btnGetBackSellingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGetBackSellingActionPerformed
+        
+    }//GEN-LAST:event_btnGetBackSellingActionPerformed
 
     private void btnRegisterClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterClientActionPerformed
         if (Validator.isEmpty(txtLogOutClientCC.getText()) && Validator.isEmpty(txtLogOutClientName.getText())
@@ -355,6 +423,12 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnAddAllSeatsActionPerformed
 
+    private void btnGetBackHome5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGetBackHome5ActionPerformed
+        FrmCinemaManagement cinema = new FrmCinemaManagement();
+        cinema.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnGetBackHome5ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -394,9 +468,16 @@ public class FrmLogOutClient extends javax.swing.JFrame {
     private javax.swing.JButton btnAddAllSeats;
     private javax.swing.JButton btnAddClients;
     private javax.swing.JButton btnAddSeats;
-    private javax.swing.JButton btnGetBackHome4;
+    private javax.swing.JButton btnGetBackHome5;
+    private javax.swing.JButton btnGetBackSelling;
     private javax.swing.JButton btnRegisterClient;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

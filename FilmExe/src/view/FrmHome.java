@@ -40,7 +40,7 @@ public class FrmHome extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnLogIn);
-        btnLogIn.setBounds(690, 370, 145, 100);
+        btnLogIn.setBounds(680, 370, 180, 100);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PantallaDeInicio.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");

@@ -84,174 +84,295 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btnExit = new javax.swing.JButton();
         btn1AChair = new javax.swing.JButton();
         jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         btnShowSales = new javax.swing.JButton();
         btnAddSeatsFromHome = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
+        getContentPane().setLayout(null);
 
         btn1BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn1BChair.setName("B1"); // NOI18N
+        getContentPane().add(btn1BChair);
+        btn1BChair.setBounds(540, 470, 38, 39);
 
         btn1CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn1CChair.setName("C1"); // NOI18N
+        getContentPane().add(btn1CChair);
+        btn1CChair.setBounds(620, 470, 38, 39);
 
         btn1DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn1DChair.setName("D1"); // NOI18N
+        getContentPane().add(btn1DChair);
+        btn1DChair.setBounds(700, 470, 38, 39);
 
         btn1EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn1EChair.setName("E1"); // NOI18N
+        getContentPane().add(btn1EChair);
+        btn1EChair.setBounds(780, 470, 38, 39);
 
         btn1FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn1FChair.setName("F1"); // NOI18N
+        getContentPane().add(btn1FChair);
+        btn1FChair.setBounds(870, 470, 38, 39);
 
         btn1GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn1GChair.setName("G1"); // NOI18N
+        getContentPane().add(btn1GChair);
+        btn1GChair.setBounds(970, 470, 38, 39);
 
         btn2AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn2AChair.setName("A2"); // NOI18N
+        getContentPane().add(btn2AChair);
+        btn2AChair.setBounds(450, 530, 38, 39);
 
         btn2BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn2BChair.setName("B2"); // NOI18N
+        getContentPane().add(btn2BChair);
+        btn2BChair.setBounds(540, 530, 38, 39);
 
         btn2CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn2CChair.setName("C2"); // NOI18N
+        getContentPane().add(btn2CChair);
+        btn2CChair.setBounds(620, 530, 38, 39);
 
         btn2DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn2DChair.setName("D2"); // NOI18N
+        getContentPane().add(btn2DChair);
+        btn2DChair.setBounds(700, 530, 38, 39);
 
         btn2EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn2EChair.setName("E2"); // NOI18N
+        getContentPane().add(btn2EChair);
+        btn2EChair.setBounds(780, 530, 38, 39);
 
         btn2FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn2FChair.setName("F2"); // NOI18N
+        getContentPane().add(btn2FChair);
+        btn2FChair.setBounds(870, 530, 38, 39);
 
         btn2GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn2GChair.setName("G2"); // NOI18N
+        getContentPane().add(btn2GChair);
+        btn2GChair.setBounds(970, 530, 38, 39);
 
         btn3EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn3EChair.setName("E3"); // NOI18N
+        getContentPane().add(btn3EChair);
+        btn3EChair.setBounds(780, 590, 38, 39);
 
         btn3FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn3FChair.setName("F3"); // NOI18N
+        getContentPane().add(btn3FChair);
+        btn3FChair.setBounds(870, 590, 38, 39);
 
         btn3GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn3GChair.setName("G3"); // NOI18N
+        getContentPane().add(btn3GChair);
+        btn3GChair.setBounds(970, 590, 38, 39);
 
         btn3AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn3AChair.setName("A3"); // NOI18N
+        getContentPane().add(btn3AChair);
+        btn3AChair.setBounds(450, 590, 38, 39);
 
         btn3BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn3BChair.setName("B3"); // NOI18N
+        getContentPane().add(btn3BChair);
+        btn3BChair.setBounds(540, 590, 38, 39);
 
         btn3CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn3CChair.setName("C3"); // NOI18N
+        getContentPane().add(btn3CChair);
+        btn3CChair.setBounds(620, 590, 38, 39);
 
         btn3DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn3DChair.setName("D3"); // NOI18N
+        getContentPane().add(btn3DChair);
+        btn3DChair.setBounds(700, 590, 38, 39);
 
         btn4EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn4EChair.setName("E4"); // NOI18N
+        getContentPane().add(btn4EChair);
+        btn4EChair.setBounds(780, 640, 38, 39);
 
         btn4GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn4GChair.setName("G4"); // NOI18N
+        getContentPane().add(btn4GChair);
+        btn4GChair.setBounds(970, 640, 38, 39);
 
         btn4FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn4FChair.setName("F4"); // NOI18N
+        getContentPane().add(btn4FChair);
+        btn4FChair.setBounds(870, 640, 38, 39);
 
         btn4DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn4DChair.setName("D4"); // NOI18N
+        getContentPane().add(btn4DChair);
+        btn4DChair.setBounds(700, 640, 38, 39);
 
         btn4AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn4AChair.setName("A4"); // NOI18N
+        getContentPane().add(btn4AChair);
+        btn4AChair.setBounds(450, 640, 38, 39);
 
         btn4BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn4BChair.setName("B4"); // NOI18N
+        getContentPane().add(btn4BChair);
+        btn4BChair.setBounds(540, 640, 38, 39);
 
         btn4CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn4CChair.setName("C4"); // NOI18N
+        getContentPane().add(btn4CChair);
+        btn4CChair.setBounds(620, 640, 38, 39);
 
         btn5FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn5FChair.setName("F5"); // NOI18N
+        getContentPane().add(btn5FChair);
+        btn5FChair.setBounds(870, 700, 38, 39);
 
         btn5EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn5EChair.setName("E5"); // NOI18N
+        getContentPane().add(btn5EChair);
+        btn5EChair.setBounds(780, 700, 38, 39);
 
         btn5GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn5GChair.setName("G5"); // NOI18N
+        getContentPane().add(btn5GChair);
+        btn5GChair.setBounds(970, 700, 38, 39);
 
         btn5DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn5DChair.setName("D5"); // NOI18N
+        getContentPane().add(btn5DChair);
+        btn5DChair.setBounds(700, 700, 38, 39);
 
         btn5AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn5AChair.setName("A5"); // NOI18N
+        getContentPane().add(btn5AChair);
+        btn5AChair.setBounds(450, 700, 38, 39);
 
         btn5BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn5BChair.setName("B5"); // NOI18N
+        getContentPane().add(btn5BChair);
+        btn5BChair.setBounds(540, 700, 38, 39);
 
         btn5CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn5CChair.setName("C5"); // NOI18N
+        getContentPane().add(btn5CChair);
+        btn5CChair.setBounds(620, 700, 38, 39);
 
         btn6FChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn6FChair.setName("F6"); // NOI18N
+        getContentPane().add(btn6FChair);
+        btn6FChair.setBounds(870, 760, 38, 39);
 
         btn6EChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn6EChair.setName("E6"); // NOI18N
+        getContentPane().add(btn6EChair);
+        btn6EChair.setBounds(780, 760, 38, 39);
 
         btn6GChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn6GChair.setName("G6"); // NOI18N
+        getContentPane().add(btn6GChair);
+        btn6GChair.setBounds(970, 760, 38, 39);
 
         btn6DChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn6DChair.setName("D6"); // NOI18N
+        getContentPane().add(btn6DChair);
+        btn6DChair.setBounds(700, 760, 38, 39);
 
         btn6AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn6AChair.setName("A6"); // NOI18N
+        getContentPane().add(btn6AChair);
+        btn6AChair.setBounds(450, 760, 38, 39);
 
         btn6BChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn6BChair.setName("B6"); // NOI18N
+        getContentPane().add(btn6BChair);
+        btn6BChair.setBounds(540, 760, 38, 39);
 
         btn6CChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn6CChair.setName("C6"); // NOI18N
+        getContentPane().add(btn6CChair);
+        btn6CChair.setBounds(620, 760, 38, 39);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("A");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(450, 440, 12, 25);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("B");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(540, 440, 10, 25);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("C");
+        getContentPane().add(jLabel4);
+        jLabel4.setBounds(620, 440, 11, 25);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("D");
+        getContentPane().add(jLabel5);
+        jLabel5.setBounds(700, 440, 13, 25);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("E");
+        getContentPane().add(jLabel6);
+        jLabel6.setBounds(780, 440, 20, 25);
 
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("F");
+        getContentPane().add(jLabel7);
+        jLabel7.setBounds(870, 440, 9, 25);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("G");
+        getContentPane().add(jLabel8);
+        jLabel8.setBounds(970, 440, 20, 25);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("1");
+        getContentPane().add(jLabel9);
+        jLabel9.setBounds(410, 470, 10, 25);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("2");
+        getContentPane().add(jLabel10);
+        jLabel10.setBounds(410, 530, 10, 25);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("3");
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(410, 590, 10, 25);
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("4");
+        getContentPane().add(jLabel12);
+        jLabel12.setBounds(410, 640, 10, 25);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("5");
+        getContentPane().add(jLabel13);
+        jLabel13.setBounds(410, 700, 10, 25);
 
         btnSelling.setBackground(new java.awt.Color(255, 255, 255));
+        btnSelling.setForeground(new java.awt.Color(255, 255, 255));
         btnSelling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVender.png"))); // NOI18N
         btnSelling.setText("HACER VENTA");
         btnSelling.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -261,29 +382,42 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
                 btnSellingActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSelling);
+        btnSelling.setBounds(1160, 250, 212, 123);
 
         btnExit.setBackground(new java.awt.Color(255, 255, 255));
+        btnExit.setForeground(new java.awt.Color(255, 255, 255));
         btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonSalir.png"))); // NOI18N
         btnExit.setText("SALIR");
-        btnExit.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        btnExit.setBorder(null);
         btnExit.setContentAreaFilled(false);
         btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnExitActionPerformed(evt);
             }
         });
+        getContentPane().add(btnExit);
+        btnExit.setBounds(1160, 590, 212, 123);
 
         btn1AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn1AChair.setName("A1"); // NOI18N
+        getContentPane().add(btn1AChair);
+        btn1AChair.setBounds(450, 470, 38, 39);
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("6");
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Pantalla.png"))); // NOI18N
+        getContentPane().add(jLabel15);
+        jLabel15.setBounds(410, 760, 10, 25);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("PANTALLA");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(680, 200, 100, 25);
 
+        btnShowSales.setBackground(new java.awt.Color(255, 255, 255));
+        btnShowSales.setForeground(new java.awt.Color(255, 255, 255));
         btnShowSales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TablaVentas.png"))); // NOI18N
         btnShowSales.setText("VENTAS");
         btnShowSales.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -293,7 +427,11 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
                 btnShowSalesActionPerformed(evt);
             }
         });
+        getContentPane().add(btnShowSales);
+        btnShowSales.setBounds(1160, 60, 212, 123);
 
+        btnAddSeatsFromHome.setBackground(new java.awt.Color(255, 255, 255));
+        btnAddSeatsFromHome.setForeground(new java.awt.Color(255, 255, 255));
         btnAddSeatsFromHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoGrande.png"))); // NOI18N
         btnAddSeatsFromHome.setText("ASIENTOS Y CLIENTES");
         btnAddSeatsFromHome.setBorder(null);
@@ -303,272 +441,13 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
                 btnAddSeatsFromHomeActionPerformed(evt);
             }
         });
+        getContentPane().add(btnAddSeatsFromHome);
+        btnAddSeatsFromHome.setBounds(1150, 420, 250, 120);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(717, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel16, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(333, 333, 333)
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 304, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(jLabel12))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(btn3AChair)
-                                        .addGap(47, 47, 47)
-                                        .addComponent(btn3BChair))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(btn4AChair)
-                                        .addGap(47, 47, 47)
-                                        .addComponent(btn4BChair))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(btn5AChair)
-                                        .addGap(47, 47, 47)
-                                        .addComponent(btn5BChair))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(btn6AChair)
-                                        .addGap(47, 47, 47)
-                                        .addComponent(btn6BChair))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                                        .addComponent(btn2AChair))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel2)
-                                            .addComponent(btn1AChair))))
-                                .addGap(47, 47, 47)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btn2BChair, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(btn1BChair, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel3))))
-                        .addGap(47, 47, 47)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn2CChair)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn2DChair))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn3CChair)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn3DChair))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn4CChair)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn4DChair))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn5CChair)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn5DChair))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn6CChair)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btn6DChair))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btn1CChair)
-                                    .addComponent(jLabel4))
-                                .addGap(55, 55, 55)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btn1DChair)
-                                    .addComponent(jLabel5))))
-                        .addGap(47, 47, 47)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(1, 1, 1)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btn2EChair, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(btn1EChair)
-                                    .addComponent(jLabel6))
-                                .addGap(47, 47, 47)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btn2FChair, javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(btn1FChair))
-                                    .addComponent(jLabel7))
-                                .addGap(59, 59, 59)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btn6GChair)
-                                    .addComponent(btn5GChair)
-                                    .addComponent(btn3GChair)
-                                    .addComponent(btn4GChair)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(1, 1, 1)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(btn2GChair)
-                                            .addComponent(btn1GChair, javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING)))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn6EChair)
-                                .addGap(47, 47, 47)
-                                .addComponent(btn6FChair))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn5EChair)
-                                .addGap(47, 47, 47)
-                                .addComponent(btn5FChair))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn3EChair)
-                                .addGap(47, 47, 47)
-                                .addComponent(btn3FChair))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btn4EChair)
-                                .addGap(47, 47, 47)
-                                .addComponent(btn4FChair)))))
-                .addGap(102, 102, 102)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnSelling, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnAddSeatsFromHome)
-                    .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(105, 105, 105))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel16)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel6)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(btn1BChair)
-                                                .addComponent(btn1CChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(btn1DChair)
-                                                .addComponent(btn1EChair, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(btn1FChair, javax.swing.GroupLayout.Alignment.TRAILING)))
-                                        .addComponent(btn1AChair))
-                                    .addComponent(jLabel9))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(btn2AChair)
-                                                    .addComponent(btn2BChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(btn2CChair)
-                                                    .addComponent(btn2DChair)))
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(btn2EChair)
-                                                .addComponent(btn2FChair, javax.swing.GroupLayout.Alignment.TRAILING)))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(btn3AChair)
-                                                    .addComponent(btn3BChair, javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel11))
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(btn3CChair)
-                                                    .addComponent(btn3DChair)))
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(btn3EChair)
-                                                .addComponent(btn3FChair, javax.swing.GroupLayout.Alignment.TRAILING))))
-                                    .addComponent(jLabel10))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn4AChair)
-                                            .addComponent(btn4BChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn4CChair)
-                                            .addComponent(btn4DChair)))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btn4EChair)
-                                        .addComponent(btn4FChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                    .addComponent(jLabel12))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn5AChair)
-                                            .addComponent(btn5BChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn5CChair)
-                                            .addComponent(btn5DChair)))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btn5EChair)
-                                        .addComponent(btn5FChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                    .addComponent(jLabel13))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn6AChair)
-                                            .addComponent(btn6BChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(btn6CChair)
-                                            .addComponent(btn6DChair)))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(btn6EChair)
-                                        .addComponent(btn6FChair, javax.swing.GroupLayout.Alignment.TRAILING))
-                                    .addComponent(jLabel15)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 38, Short.MAX_VALUE)
-                                .addComponent(jLabel8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btn1GChair)
-                                .addGap(18, 18, 18)
-                                .addComponent(btn2GChair)
-                                .addGap(18, 18, 18)
-                                .addComponent(btn3GChair)
-                                .addGap(18, 18, 18)
-                                .addComponent(btn4GChair)
-                                .addGap(18, 18, 18)
-                                .addComponent(btn5GChair)
-                                .addGap(18, 18, 18)
-                                .addComponent(btn6GChair)))
-                        .addGap(40, 40, 40))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(90, 90, 90)
-                        .addComponent(btnSelling, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(44, 44, 44)
-                        .addComponent(btnShowSales, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(56, 56, 56)
-                        .addComponent(btnAddSeatsFromHome)
-                        .addGap(41, 41, 41)
-                        .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Pantalla.png"))); // NOI18N
+        jLabel14.setText("jLabel14");
+        getContentPane().add(jLabel14);
+        jLabel14.setBounds(370, 10, 730, 420);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -680,8 +559,8 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

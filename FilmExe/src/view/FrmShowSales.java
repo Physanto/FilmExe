@@ -40,9 +40,11 @@ public class FrmShowSales extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         btnGetBackHome2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
+        getContentPane().setLayout(null);
 
         tableSales.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -57,10 +59,16 @@ public class FrmShowSales extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tableSales);
 
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(420, 347, 751, 464);
+
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         jLabel1.setText("VENTAS FILMEXE");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(682, 286, 194, 32);
 
         btnGetBackHome2.setBackground(new java.awt.Color(255, 255, 255));
+        btnGetBackHome2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnGetBackHome2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVolver.png"))); // NOI18N
         btnGetBackHome2.setText("VOLVER");
         btnGetBackHome2.setBorder(null);
@@ -70,41 +78,16 @@ public class FrmShowSales extends javax.swing.JFrame {
                 btnGetBackHome2ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnGetBackHome2);
+        btnGetBackHome2.setBounds(61, 711, 170, 100);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CortinasCine.png"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(140, 12, 1160, 268);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addComponent(btnGetBackHome2)
-                        .addGap(213, 213, 213)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 751, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(682, 682, 682)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(140, 140, 140)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1160, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(620, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 464, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnGetBackHome2))
-                .addContainerGap(372, Short.MAX_VALUE))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/PantallaDeInicio.jpg"))); // NOI18N
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(-60, 0, 1740, 960);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -119,6 +102,7 @@ public class FrmShowSales extends javax.swing.JFrame {
     private javax.swing.JButton btnGetBackHome2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tableSales;
     // End of variables declaration//GEN-END:variables
