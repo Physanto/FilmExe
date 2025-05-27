@@ -152,7 +152,7 @@ public class FrmSelling extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnLogOutClient);
-        btnLogOutClient.setBounds(1150, 670, 150, 26);
+        btnLogOutClient.setBounds(1150, 670, 150, 23);
 
         btnSearchClient.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         btnSearchClient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoLupa.png"))); // NOI18N
@@ -166,12 +166,12 @@ public class FrmSelling extends javax.swing.JFrame {
         getContentPane().add(btnSearchClient);
         btnSearchClient.setBounds(1170, 430, 150, 50);
         getContentPane().add(txtClientCCSearching);
-        txtClientCCSearching.setBounds(1150, 390, 189, 25);
+        txtClientCCSearching.setBounds(1150, 390, 189, 23);
 
         jLabel7.setFont(new java.awt.Font("Impact", 2, 18)); // NOI18N
         jLabel7.setText("Ingresa la cedula del cliente");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(1140, 340, 260, 26);
+        jLabel7.setBounds(1140, 340, 260, 23);
 
         listSelectedSeats.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
         jScrollPane1.setViewportView(listSelectedSeats);
@@ -484,27 +484,29 @@ public class FrmSelling extends javax.swing.JFrame {
                     .addGroup(pnlReceiptLayout.createSequentialGroup()
                         .addGap(35, 35, 35)
                         .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel26)
-                            .addGroup(pnlReceiptLayout.createSequentialGroup()
-                                .addGap(2, 2, 2)
-                                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel29)
-                                    .addComponent(jLabel24)
-                                    .addComponent(jLabel36)
-                                    .addComponent(jLabel31)
-                                    .addComponent(jLabel28)))
                             .addComponent(jLabel34)
                             .addGroup(pnlReceiptLayout.createSequentialGroup()
                                 .addGap(19, 19, 19)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(494, 494, 494)
-                        .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel23)
-                            .addComponent(jLabel25)
-                            .addComponent(jLabel27)
-                            .addComponent(jLabel30)
-                            .addComponent(jLabel32)
-                            .addComponent(jLabel33)))
+                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(pnlReceiptLayout.createSequentialGroup()
+                                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel26)
+                                    .addGroup(pnlReceiptLayout.createSequentialGroup()
+                                        .addGap(2, 2, 2)
+                                        .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel29)
+                                            .addComponent(jLabel24)
+                                            .addComponent(jLabel36)
+                                            .addComponent(jLabel31)
+                                            .addComponent(jLabel28))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel23)
+                                    .addComponent(jLabel25)
+                                    .addComponent(jLabel27)
+                                    .addComponent(jLabel30)
+                                    .addComponent(jLabel32)
+                                    .addComponent(jLabel33)))))
                     .addGroup(pnlReceiptLayout.createSequentialGroup()
                         .addGap(59, 59, 59)
                         .addComponent(jLabel35)))
@@ -536,7 +538,7 @@ public class FrmSelling extends javax.swing.JFrame {
                     .addComponent(jLabel31)
                     .addComponent(jLabel32))
                 .addGap(26, 26, 26)
-                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel28)
                     .addComponent(jLabel33))
                 .addGap(36, 36, 36)
@@ -547,7 +549,7 @@ public class FrmSelling extends javax.swing.JFrame {
         );
 
         getContentPane().add(pnlReceipt);
-        pnlReceipt.setBounds(1350, 150, 420, 583);
+        pnlReceipt.setBounds(1350, 150, 380, 559);
 
         jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CortinaLateralDerecha.png"))); // NOI18N
         getContentPane().add(jLabel22);
