@@ -338,12 +338,19 @@ public class FrmLogOutClient extends javax.swing.JFrame {
     }//GEN-LAST:event_txtLogOutClientCCActionPerformed
 
     private void btnRegisterClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterClientActionPerformed
-        if (Validator.isEmpty(txtLogOutClientCC.getText()) && Validator.isEmpty(txtLogOutClientName.getText())
-                && Validator.isEmpty(txtLogOutClientLastName.getText()) && Validator.isEmpty(txtLogOutClientPhone.getText())
-                && Validator.isEmpty(txtLogOutClientAddress.getText()) && Validator.isEmpty(txtLogOutClientEmail.getText())) {
+        if (Validator.isEmpty(txtLogOutClientCC.getText()) || Validator.isEmpty(txtLogOutClientName.getText())
+                 || Validator.isEmpty(txtLogOutClientLastName.getText()) || Validator.isEmpty(txtLogOutClientPhone.getText())
+                || Validator.isEmpty(txtLogOutClientAddress.getText()) || Validator.isEmpty(txtLogOutClientEmail.getText())) {
             JOptionPane.showMessageDialog(this, "Llena todos los campos para registrar el cliente");
             return;
         }
+
+		if (!Validator.lengthBetween(txtLogOutClientCC.getText(), 8, 10) || !Validator.lengthBetween(txtLogOutClientName.getText(), 4, 15)
+                || !Validator.lengthBetween(txtLogOutClientLastName.getText(), 4, 20) || !Validator.lengthBetween(txtLogOutClientPhone.getText(), 10, 15)
+                || !Validator.lengthBetween(txtLogOutClientAddress.getText(), 10, 200) || !Validator.lengthBetween(txtLogOutClientEmail.getText(), 10, 255)) {
+            JOptionPane.showMessageDialog(this, "Verifique la longitud de los datos");
+            return;
+       	}
         boolean confirm = personController.insertPerson(new Person(txtLogOutClientCC.getText(), txtLogOutClientName.getText(),
                 txtLogOutClientLastName.getText(), txtLogOutClientPhone.getText(), txtLogOutClientAddress.getText(), txtLogOutClientEmail.getText()));
         if(confirm){

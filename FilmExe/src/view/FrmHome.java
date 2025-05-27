@@ -23,11 +23,11 @@ public class FrmHome extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1920, 1080));
         getContentPane().setLayout(null);
 
-        labelHomeTitle.setFont(new java.awt.Font("Impact", 3, 36)); // NOI18N
+        labelHomeTitle.setFont(new java.awt.Font("Impact", 3, 50)); // NOI18N
         labelHomeTitle.setForeground(new java.awt.Color(0, 0, 0));
         labelHomeTitle.setText(" Bienvenido a FilmExe");
         getContentPane().add(labelHomeTitle);
-        labelHomeTitle.setBounds(600, 290, 347, 45);
+        labelHomeTitle.setBounds(480, 270, 540, 80);
 
         btnLogIn.setForeground(new java.awt.Color(0, 0, 0));
         btnLogIn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonEntrarSistema.png"))); // NOI18N
