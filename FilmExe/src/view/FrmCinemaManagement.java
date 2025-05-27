@@ -1,19 +1,23 @@
 package view;
 
+import controller.SeatController;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import model.Seat;
 
 public class FrmCinemaManagement extends javax.swing.JFrame {
 
     private ArrayList<String> seatNames = new ArrayList<>();
     private int i = 0;
+	private SeatController seatController;	
 
     public FrmCinemaManagement() {
         initComponents();
+		seatController = new SeatController();
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setVisible(true);
         btnSelling.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -21,6 +25,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btnShowSales.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         seatSelection();
         btnAddSeatsFromHome.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+		disabledButtons();
     }
 
     @SuppressWarnings("unchecked")
@@ -484,6 +489,33 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         addSeats.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnAddSeatsFromHomeActionPerformed
+
+	private void disabledButtons(){
+
+		JButton[] buttonss = {btn1AChair, btn1BChair, btn1CChair, btn1DChair, btn1EChair, btn1FChair, btn1GChair,
+            btn2AChair, btn2BChair, btn2CChair, btn2DChair, btn2EChair, btn2FChair, btn2GChair,
+            btn3AChair, btn3BChair, btn3CChair, btn3DChair, btn3EChair, btn3FChair, btn3GChair,
+            btn4AChair, btn4BChair, btn4CChair, btn4DChair, btn4EChair, btn4FChair, btn4GChair,
+            btn5AChair, btn5BChair, btn5CChair, btn5DChair, btn5EChair, btn5FChair, btn5GChair,
+            btn6AChair, btn6BChair, btn6CChair, btn6DChair, btn6EChair, btn6FChair, btn6GChair};
+
+		ArrayList<Seat> seatDisable = seatController.seatDisponibles();
+
+		if(seatDisable == null || seatDisable.isEmpty()){
+			return;
+		}
+
+		for (JButton button : buttonss) {
+			String buttonName = button.getName(); 
+
+			for (Seat seat : seatDisable) {
+				if (buttonName.equalsIgnoreCase(seat.getName())) {
+					button.setEnabled(false);
+					break;
+				}
+			}
+		}
+	}
 
     private void seatSelection() {
 

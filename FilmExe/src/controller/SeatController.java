@@ -41,4 +41,13 @@ public class SeatController {
             return null;
         }
     }
+
+	public ArrayList<Seat> seatDisponibles(){
+		try {
+			return seatDAO.seatDisponible();
+		} catch (SQLException e) {
+			System.out.println("error "+e.toString());
+			return null;
+		}
+	}
 }

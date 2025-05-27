@@ -55,4 +55,32 @@ public class SeatDAO {
 		}    
 		return seats;
     }
+
+	public Object[][] searchSeats(String name) throws SQLException {
+		Object[][] data = new Object[4][5];
+		sql = "SELECT * FROM seat WHERE name = '"+name+"'";
+
+        	resultSet = executeSql.executeQuery(sql);
+
+        	if (resultSet.next()) {	
+        	}
+		return data;
+    }
+
+	public ArrayList<Seat> seatDisponible() throws SQLException{
+
+		ArrayList<Seat> ids = new ArrayList<>();
+
+		sql = "SELECT s.id, s.name, s.price "
+               + "FROM seat s "
+               + "JOIN seat_sale ss ON s.id = ss.seat_id "
+               + "JOIN sale sa ON ss.sale_id = sa.id "
+               + "WHERE NOW() < sa.end_date";
+		resultSet = executeSql.executeQuery(sql);
+
+		while(resultSet.next()){
+			ids.add(new Seat(resultSet.getInt("id"), resultSet.getString("name"), resultSet.getDouble("price")));
+		}
+		return ids;
+	}
 }
