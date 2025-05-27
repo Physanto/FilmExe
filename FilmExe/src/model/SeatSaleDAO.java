@@ -18,10 +18,15 @@ public class SeatSaleDAO {
 		executeSql = new ExecuteSql();
 	}
 
-	public boolean insertSeatSale(int idVenta, int idUsuario){
+	public boolean insertSeatSale(int idSale, int[] idSeat, double price){
 
-		sql = "INSER INTO sale_seat ("
-				+ "price, ";
-                return true;
+		for (int i = 0; i < idSeat.length; i++) {	
+			sql = "INSERT INTO seat_sale ("
+					+ "sale_id, seat_id, price) VALUES "
+					+ "("+idSale+", "+idSeat[i]+", "+price+")";
+
+			executeSql.executeDML(sql);
+		}
+		return true;
 	}
 }

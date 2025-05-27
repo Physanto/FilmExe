@@ -27,6 +27,20 @@ public class SaleDAO {
 		return executeSql.executeDML(sql);
 	}
 
+	public Sale searchSale(int idPerson) throws SQLException{
+		sql = "SELECT s.* FROM sale s " +
+          "WHERE s.person_id = "+idPerson+" " +
+          "ORDER BY s.id DESC LIMIT 1";
+
+		resultSet = executeSql.executeQuery(sql);			
+		
+		if(resultSet.next()){
+			return new Sale(resultSet.getInt(1), resultSet.getDouble(2), resultSet.getTimestamp(3).toLocalDateTime(),
+			resultSet.getTimestamp(4).toLocalDateTime());
+		}
+		return null;
+	}
+
 	public Object[][] searchSale(String cc) throws SQLException{
 		
 		Object[][] data = new Object[countAllSale()][5];
@@ -54,14 +68,24 @@ public class SaleDAO {
 	}
 
 	public int countAllSale() throws SQLException {
-			sql = "SELECT COUNT(*) FROM sale";
-			resultSet = executeSql.executeQuery(sql);
+		sql = "SELECT COUNT(*) FROM sale";
+		resultSet = executeSql.executeQuery(sql);
 
-			int countRow = 0;
+		int countRow = 0;
 
-			while(resultSet.next()){
-				countRow = resultSet.getInt(1);
-			}
-			return countRow;
-        }
+		while (resultSet.next()) {
+			countRow = resultSet.getInt(1);
+		}
+		return countRow;
+	}
+
+	public boolean updateSaleTotal(int idSale){
+		sql = "UPDATE sale s "
+        + "SET s.total = ("
+        + "  SELECT SUM(ss.price) "
+        + "  FROM seat_sale ss "
+        + "  WHERE ss.sale_id = " + idSale + ") "
+        + "WHERE s.id = " + idSale;
+		return executeSql.executeDML(sql);
+	}
 }

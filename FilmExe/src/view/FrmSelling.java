@@ -3,6 +3,7 @@ package view;
 import controller.PersonController;
 import controller.SaleController;
 import controller.SeatController;
+import controller.SeatSaleController;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -18,6 +19,8 @@ public class FrmSelling extends javax.swing.JFrame {
     private PersonController personController;
 	private SeatController seatController;
 	private SaleController saleController;
+	private int[] idSeats;
+	private SeatSaleController seatSaleController;
 
     public FrmSelling(ArrayList<String> seatNames) {
 
@@ -25,6 +28,7 @@ public class FrmSelling extends javax.swing.JFrame {
         personController = new PersonController();
 		seatController = new SeatController();
 		saleController = new SaleController();
+		seatSaleController = new SeatSaleController();
         this.seatNames = seatNames;
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setVisible(true);
@@ -65,6 +69,7 @@ public class FrmSelling extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         listSelectedSeats = new javax.swing.JList<>();
         jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
@@ -135,6 +140,8 @@ public class FrmSelling extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("CaskaydiaCove NF", 1, 18)); // NOI18N
         jLabel8.setText("Asientos Seleccionados");
 
+        jLabel9.setText("anade el descuento");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -149,12 +156,17 @@ public class FrmSelling extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(87, 87, 87)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addComponent(jLabel8)))
-                        .addGap(304, 304, 304)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(87, 87, 87)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(30, 30, 30)
+                                        .addComponent(jLabel8)))
+                                .addGap(304, 304, 304))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel9)
+                                .addGap(28, 28, 28)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(22, 22, 22)
@@ -249,7 +261,9 @@ public class FrmSelling extends javax.swing.JFrame {
                             .addGap(73, 73, 73)
                             .addComponent(txtChairName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(30, 30, 30)
-                            .addComponent(txtChairPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(txtChairPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel9)))
                         .addComponent(jLabel6)))
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -300,6 +314,8 @@ public class FrmSelling extends javax.swing.JFrame {
         }
 
 		makeSeal();
+		makeSaleSeat();
+		updateSaleTotal();
 
         //FrmReceipt receipt = new FrmReceipt();
         //receipt.setVisible(true);
@@ -315,21 +331,43 @@ public class FrmSelling extends javax.swing.JFrame {
 		System.out.println("el id es " + person.getId());
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
-		boolean checkSale = saleController.makeSale(new Sale(calculateTotalSale(), LocalDateTime.parse(txtStardDate.getText(), formatter), 
+		boolean checkSale = saleController.makeSale(new Sale(0, LocalDateTime.parse(txtStardDate.getText(), formatter), 
 				LocalDateTime.parse(txtEndDate.getText(), formatter)), person.getId());
 
 		if(checkSale) System.out.println("Venta realizada");
 	}
 
-	private double calculateTotalSale(){	
+	private double calculateTotalSaleSeat(){	
+		return searchSeats().get(0).getPrice()- Double.parseDouble(txtChairPrice.getText());
+	}	
+
+	private void updateSaleTotal(){
+		saleController.updateSaleTotal(searchSale().getId());
+	}
+
+	//metodo que se va usar, tenerl en cuenta
+	private double calculateTotalSaleSeats(){	
 		ArrayList<Seat> seats = searchSeats();
 
 		double total = 0;
 		for(Seat seat : seats){
-			total += seat.getPrice();
+			total = total + seat.getPrice();
 		}
 		return total;
 	}	
+
+	private void makeSaleSeat(){
+		Sale sale = searchSale();
+
+		if(sale == null) {
+			System.out.println("No se encontro la venta con esa cedula del cliente");
+			return;
+		}
+
+		boolean checkSeatSale = seatSaleController.insertSeatSale(sale.getId(), idSeats, calculateTotalSaleSeat());
+
+		if(checkSeatSale) System.out.println("Venta Asiento realizada");
+	}
 
     private void btnLogOutClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogOutClientActionPerformed
         FrmLogOutClient logOut = new FrmLogOutClient();
@@ -367,6 +405,10 @@ public class FrmSelling extends javax.swing.JFrame {
 		return personController.searchPerson(txtClientCCSearching.getText());
 	}
 
+	private Sale searchSale(){	
+		return saleController.searchSale(searchPerson().getId());
+	}
+
 	private void showSelectedSeats(){
 		String[] names = new String[seatNames.size()];
 		String concat = "";
@@ -390,7 +432,7 @@ public class FrmSelling extends javax.swing.JFrame {
 	private void getIdSeats(){
 
 		ArrayList<Seat> seats = searchSeats();
-		int[] idSeats = new int[seats.size()];
+		idSeats = new int[seats.size()];
 
 		for(int i = 0; i < seats.size(); i++){		
 			
@@ -413,6 +455,7 @@ public class FrmSelling extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JList<String> listSelectedSeats;
     private javax.swing.JTextField txtChairName;
