@@ -1,11 +1,15 @@
 package view;
 
 import controller.PersonController;
+import controller.SaleController;
 import controller.SeatController;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import model.Person;
+import model.Sale;
 import model.Seat;
 
 public class FrmSelling extends javax.swing.JFrame {
@@ -13,12 +17,14 @@ public class FrmSelling extends javax.swing.JFrame {
     private ArrayList<String> seatNames;
     private PersonController personController;
 	private SeatController seatController;
+	private SaleController saleController;
 
     public FrmSelling(ArrayList<String> seatNames) {
 
         initComponents();
         personController = new PersonController();
 		seatController = new SeatController();
+		saleController = new SaleController();
         this.seatNames = seatNames;
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setVisible(true);
@@ -27,7 +33,7 @@ public class FrmSelling extends javax.swing.JFrame {
         btnLogOutClient.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSearchClient.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 		showSelectedSeats();
-		searchSeat();
+		getIdSeats();
     }
 
     @SuppressWarnings("unchecked")
@@ -282,20 +288,48 @@ public class FrmSelling extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Llena todos los campos del cliente para realizar la venta");
             return;
         }
-        if (!Validator.lengthBetween(txtClientCC.getText(), 8, 10) || Validator.lengthBetween(txtClientName.getText(), 4, 15)
-                || Validator.lengthBetween(txtClientLastName.getText(), 4, 20) || Validator.lengthBetween(txtClientPhone.getText(), 10, 15)
-                || Validator.lengthBetween(txtClientAddress.getText(), 10, 200) || Validator.lengthBetween(txtClientEmail.getText(), 10, 255)) {
+        if (!Validator.lengthBetween(txtClientCC.getText(), 8, 10) || !Validator.lengthBetween(txtClientName.getText(), 4, 15)
+                || !Validator.lengthBetween(txtClientLastName.getText(), 4, 20) || !Validator.lengthBetween(txtClientPhone.getText(), 10, 15)
+                || !Validator.lengthBetween(txtClientAddress.getText(), 10, 200) || !Validator.lengthBetween(txtClientEmail.getText(), 10, 255)) {
             JOptionPane.showMessageDialog(this, "Verifique la longitud de los datos");
             return;
-        }
+       	}
         if(!Validator.isNumber(txtChairPrice.getText()) && !Validator.isNumberPositive(txtChairPrice.getText())){
             JOptionPane.showMessageDialog(this, "Ingresa datos validos");
             return;
         }
-        FrmReceipt receipt = new FrmReceipt();
-        receipt.setVisible(true);
-        this.dispose();
+
+		makeSeal();
+
+        //FrmReceipt receipt = new FrmReceipt();
+        //receipt.setVisible(true);
+        //this.dispose();
     }//GEN-LAST:event_btnSellActionPerformed
+
+	private void makeSeal(){
+
+		Person person = searchPerson();
+
+		if(person == null) return;	
+
+		System.out.println("el id es " + person.getId());
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+		boolean checkSale = saleController.makeSale(new Sale(calculateTotalSale(), LocalDateTime.parse(txtStardDate.getText(), formatter), 
+				LocalDateTime.parse(txtEndDate.getText(), formatter)), person.getId());
+
+		if(checkSale) System.out.println("Venta realizada");
+	}
+
+	private double calculateTotalSale(){	
+		ArrayList<Seat> seats = searchSeats();
+
+		double total = 0;
+		for(Seat seat : seats){
+			total += seat.getPrice();
+		}
+		return total;
+	}	
 
     private void btnLogOutClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLogOutClientActionPerformed
         FrmLogOutClient logOut = new FrmLogOutClient();
@@ -308,15 +342,17 @@ public class FrmSelling extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Llene el campo con los datos del cliente");
             return;
         }
-        Person person = personController.searchPerson(txtClientCCSearching.getText());
+		
+        Person person = searchPerson();
 
 		if(person == null){
 			int option = JOptionPane.showConfirmDialog(this, "Persona no registrada con esa identificacion, ¿Desea registrarlo?");
-                        if(option == 0){
-                            FrmLogOutClient register = new FrmLogOutClient();
-                            register.setVisible(true);
-                            this.dispose();
-                        }
+
+            if(option == 0){
+				FrmLogOutClient register = new FrmLogOutClient();
+				register.setVisible(true);
+				this.dispose();
+            }
 			return;
 		}
         txtClientCC.setText(person.getCc());
@@ -326,6 +362,10 @@ public class FrmSelling extends javax.swing.JFrame {
         txtClientAddress.setText(person.getAdress());
         txtClientEmail.setText(person.getEmail());
     }//GEN-LAST:event_btnSearchClientActionPerformed
+
+	private Person searchPerson(){
+		return personController.searchPerson(txtClientCCSearching.getText());
+	}
 
 	private void showSelectedSeats(){
 		String[] names = new String[seatNames.size()];
@@ -340,12 +380,16 @@ public class FrmSelling extends javax.swing.JFrame {
 		txtChairName.setText(concat);
 	}
 
+	private ArrayList<Seat> searchSeats(){	
+		return seatController.searchSeats(seatNames);
+	}
+
 	/**
 	 * method that search in the list seats y return all id for are compared with the sale
 	 */
-	private void searchSeat(){
+	private void getIdSeats(){
 
-		ArrayList<Seat> seats = seatController.searchSeats(seatNames);
+		ArrayList<Seat> seats = searchSeats();
 		int[] idSeats = new int[seats.size()];
 
 		for(int i = 0; i < seats.size(); i++){		

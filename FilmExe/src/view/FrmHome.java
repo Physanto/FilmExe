@@ -1,7 +1,5 @@
 package view;
 
-import java.awt.Image;
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 public class FrmHome extends javax.swing.JFrame {

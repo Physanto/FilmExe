@@ -20,7 +20,7 @@ public class SaleDAO {
 
 	public boolean makeSale(Sale sale, int idPerson){
 		sql = "INSERT INTO sale ("
-				+ "total, star_date, end_date person_id) VALUES ("
+				+ "total, start_date, end_date, person_id) VALUES ("
 				+ ""+sale.getTotal()+", '"+sale.getStar_date()+"',"
 				+ "'"+sale.getEnd_date()+"', "+idPerson+")";
 

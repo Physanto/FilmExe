@@ -75,7 +75,7 @@ public class PersonDAO {
         resultSet = executeSql.executeQuery(sql);
 
         if (resultSet.next()){
-            return new Person(cc, resultSet.getString(3), resultSet.getString(4), resultSet.getString(5),
+            return new Person(resultSet.getInt(1), cc, resultSet.getString(3), resultSet.getString(4), resultSet.getString(5),
                     resultSet.getString(6), resultSet.getString(7));
         }
         return null;
