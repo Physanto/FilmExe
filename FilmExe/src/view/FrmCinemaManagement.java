@@ -299,80 +299,80 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btn6CChair.setBounds(620, 760, 38, 39);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("A");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(450, 440, 12, 25);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("B");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(540, 440, 10, 25);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("C");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(620, 440, 11, 25);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("D");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(700, 440, 13, 25);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("E");
         getContentPane().add(jLabel6);
         jLabel6.setBounds(780, 440, 20, 25);
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("F");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(870, 440, 9, 25);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("G");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(970, 440, 20, 25);
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setText("1");
         getContentPane().add(jLabel9);
         jLabel9.setBounds(410, 470, 10, 25);
 
         jLabel10.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setForeground(new java.awt.Color(0, 0, 0));
         jLabel10.setText("2");
         getContentPane().add(jLabel10);
         jLabel10.setBounds(410, 530, 10, 25);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel11.setForeground(new java.awt.Color(0, 0, 0));
         jLabel11.setText("3");
         getContentPane().add(jLabel11);
         jLabel11.setBounds(410, 590, 10, 25);
 
         jLabel12.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setForeground(new java.awt.Color(0, 0, 0));
         jLabel12.setText("4");
         getContentPane().add(jLabel12);
         jLabel12.setBounds(410, 640, 10, 25);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel13.setForeground(new java.awt.Color(0, 0, 0));
         jLabel13.setText("5");
         getContentPane().add(jLabel13);
         jLabel13.setBounds(410, 700, 10, 25);
 
         btnSelling.setBackground(new java.awt.Color(255, 255, 255));
-        btnSelling.setForeground(new java.awt.Color(255, 255, 255));
+        btnSelling.setForeground(new java.awt.Color(0, 0, 0));
         btnSelling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVender.png"))); // NOI18N
         btnSelling.setText("HACER VENTA");
         btnSelling.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -386,7 +386,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btnSelling.setBounds(1160, 250, 212, 123);
 
         btnExit.setBackground(new java.awt.Color(255, 255, 255));
-        btnExit.setForeground(new java.awt.Color(255, 255, 255));
+        btnExit.setForeground(new java.awt.Color(0, 0, 0));
         btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonSalir.png"))); // NOI18N
         btnExit.setText("SALIR");
         btnExit.setBorder(null);
@@ -397,7 +397,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnExit);
-        btnExit.setBounds(1160, 590, 212, 123);
+        btnExit.setBounds(50, 250, 212, 123);
 
         btn1AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn1AChair.setName("A1"); // NOI18N
@@ -405,19 +405,19 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btn1AChair.setBounds(450, 470, 38, 39);
 
         jLabel15.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setText("6");
         getContentPane().add(jLabel15);
         jLabel15.setBounds(410, 760, 10, 25);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("PANTALLA");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(680, 200, 100, 25);
 
         btnShowSales.setBackground(new java.awt.Color(255, 255, 255));
-        btnShowSales.setForeground(new java.awt.Color(255, 255, 255));
+        btnShowSales.setForeground(new java.awt.Color(0, 0, 0));
         btnShowSales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TablaVentas.png"))); // NOI18N
         btnShowSales.setText("VENTAS");
         btnShowSales.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -431,7 +431,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btnShowSales.setBounds(1160, 60, 212, 123);
 
         btnAddSeatsFromHome.setBackground(new java.awt.Color(255, 255, 255));
-        btnAddSeatsFromHome.setForeground(new java.awt.Color(255, 255, 255));
+        btnAddSeatsFromHome.setForeground(new java.awt.Color(0, 0, 0));
         btnAddSeatsFromHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoGrande.png"))); // NOI18N
         btnAddSeatsFromHome.setText("ASIENTOS Y CLIENTES");
         btnAddSeatsFromHome.setBorder(null);
@@ -442,7 +442,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAddSeatsFromHome);
-        btnAddSeatsFromHome.setBounds(1150, 420, 250, 120);
+        btnAddSeatsFromHome.setBounds(40, 80, 250, 120);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Pantalla.png"))); // NOI18N
         jLabel14.setText("jLabel14");

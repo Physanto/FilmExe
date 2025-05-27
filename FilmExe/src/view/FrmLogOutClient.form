@@ -24,22 +24,20 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+              <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="106" pref="106" max="-2" attributes="0"/>
+                      <EmptySpace min="100" pref="100" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" pref="1129" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="616" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="btnGetBackSelling" min="-2" pref="160" max="-2" attributes="0"/>
-                              <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="174" max="-2" attributes="0"/>
                               <Component id="panelAddSeats" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                               <Component id="btnGetBackHome5" min="-2" pref="170" max="-2" attributes="0"/>
                               <EmptySpace min="84" pref="84" max="-2" attributes="0"/>
                               <Component id="btnAddSeats" min="-2" pref="150" max="-2" attributes="0"/>
@@ -47,7 +45,7 @@
                               <Component id="btnAddClients" min="-2" pref="172" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="516" pref="516" max="-2" attributes="0"/>
+                              <EmptySpace min="510" pref="510" max="-2" attributes="0"/>
                               <Component id="panelAddClients" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -80,14 +78,8 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace min="264" pref="264" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="290" pref="290" max="-2" attributes="0"/>
-                              <Component id="btnGetBackSelling" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="panelAddSeats" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                      <Component id="panelAddSeats" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="btnGetBackHome5" min="-2" max="-2" attributes="0"/>
                           <Group type="102" attributes="0">
@@ -109,26 +101,6 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="btnGetBackSelling">
-      <Properties>
-        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/Images/IconoBotonVolver.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="VENTA"/>
-        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
-            <EmptyBorder/>
-          </Border>
-        </Property>
-        <Property name="contentAreaFilled" type="boolean" value="false"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGetBackSellingActionPerformed"/>
-      </Events>
-    </Component>
     <Container class="javax.swing.JPanel" name="panelAddClients">
 
       <Layout>

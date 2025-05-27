@@ -30,7 +30,6 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         panelAddSeats.setVisible(false);
         personController = new PersonController();
         seatController = new SeatController();
-        btnGetBackSelling.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAddSeats.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAddClients.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAddSeats.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -56,7 +55,6 @@ public class FrmLogOutClient extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnGetBackSelling = new javax.swing.JButton();
         panelAddClients = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         txtLogOutClientPhone = new javax.swing.JTextField();
@@ -85,17 +83,6 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         btnGetBackHome5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        btnGetBackSelling.setBackground(new java.awt.Color(255, 255, 255));
-        btnGetBackSelling.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVolver.png"))); // NOI18N
-        btnGetBackSelling.setText("VENTA");
-        btnGetBackSelling.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        btnGetBackSelling.setContentAreaFilled(false);
-        btnGetBackSelling.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGetBackSellingActionPerformed(evt);
-            }
-        });
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel5.setText("Ingrese los datos del cliente");
@@ -298,27 +285,25 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(106, 106, 106)
+                        .addGap(100, 100, 100)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1129, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(616, 616, 616))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnGetBackSelling, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(20, 20, 20)
+                                .addGap(174, 174, 174)
                                 .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
                                 .addComponent(btnGetBackHome5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(84, 84, 84)
                                 .addComponent(btnAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(218, 218, 218)
                                 .addComponent(btnAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(516, 516, 516)
+                                .addGap(510, 510, 510)
                                 .addComponent(panelAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -342,12 +327,8 @@ public class FrmLogOutClient extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGap(264, 264, 264)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(290, 290, 290)
-                                .addComponent(btnGetBackSelling))
-                            .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(30, 30, 30)
+                        .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(47, 47, 47)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnGetBackHome5)
                             .addGroup(layout.createSequentialGroup()
@@ -372,10 +353,6 @@ public class FrmLogOutClient extends javax.swing.JFrame {
             return;
         }
     }//GEN-LAST:event_txtLogOutClientCCActionPerformed
-
-    private void btnGetBackSellingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGetBackSellingActionPerformed
-        
-    }//GEN-LAST:event_btnGetBackSellingActionPerformed
 
     private void btnRegisterClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterClientActionPerformed
         if (Validator.isEmpty(txtLogOutClientCC.getText()) && Validator.isEmpty(txtLogOutClientName.getText())
@@ -469,7 +446,6 @@ public class FrmLogOutClient extends javax.swing.JFrame {
     private javax.swing.JButton btnAddClients;
     private javax.swing.JButton btnAddSeats;
     private javax.swing.JButton btnGetBackHome5;
-    private javax.swing.JButton btnGetBackSelling;
     private javax.swing.JButton btnRegisterClient;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
