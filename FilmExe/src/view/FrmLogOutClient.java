@@ -32,7 +32,8 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         seatController = new SeatController();
         btnAddSeats.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAddClients.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnAddSeats.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnUpdateClient.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnRemoveClient.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         showTable();
     }
 
@@ -81,8 +82,11 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         btnGetBackHome5 = new javax.swing.JButton();
+        btnUpdateClient = new javax.swing.JButton();
+        btnRemoveClient = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel5.setText("Ingrese los datos del cliente");
@@ -133,7 +137,7 @@ public class FrmLogOutClient extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddClientsLayout.createSequentialGroup()
                 .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panelAddClientsLayout.createSequentialGroup()
-                        .addContainerGap(76, Short.MAX_VALUE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(panelAddClientsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panelAddClientsLayout.createSequentialGroup()
                                 .addGap(64, 64, 64)
@@ -206,6 +210,9 @@ public class FrmLogOutClient extends javax.swing.JFrame {
                 .addGap(0, 11, Short.MAX_VALUE))
         );
 
+        getContentPane().add(panelAddClients);
+        panelAddClients.setBounds(546, 190, 300, 517);
+
         btnAddAllSeats.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnAddAllSeats.setText("Agregar Asientos");
         btnAddAllSeats.setContentAreaFilled(false);
@@ -220,17 +227,20 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         panelAddSeatsLayout.setHorizontalGroup(
             panelAddSeatsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddSeatsLayout.createSequentialGroup()
-                .addContainerGap(61, Short.MAX_VALUE)
+                .addContainerGap(56, Short.MAX_VALUE)
                 .addComponent(btnAddAllSeats)
-                .addGap(30, 30, 30))
+                .addGap(43, 43, 43))
         );
         panelAddSeatsLayout.setVerticalGroup(
             panelAddSeatsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelAddSeatsLayout.createSequentialGroup()
-                .addGap(215, 215, 215)
+                .addGap(114, 114, 114)
                 .addComponent(btnAddAllSeats, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(52, Short.MAX_VALUE))
+                .addContainerGap(153, Short.MAX_VALUE))
         );
+
+        getContentPane().add(panelAddSeats);
+        panelAddSeats.setBounds(210, 270, 270, 375);
 
         btnAddSeats.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnAddSeats.setText("Agregar Asientos");
@@ -240,6 +250,8 @@ public class FrmLogOutClient extends javax.swing.JFrame {
                 btnAddSeatsActionPerformed(evt);
             }
         });
+        getContentPane().add(btnAddSeats);
+        btnAddSeats.setBounds(270, 710, 150, 27);
 
         btnAddClients.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnAddClients.setText("Agregar Clientes");
@@ -249,6 +261,8 @@ public class FrmLogOutClient extends javax.swing.JFrame {
                 btnAddClientsActionPerformed(evt);
             }
         });
+        getContentPane().add(btnAddClients);
+        btnAddClients.setBounds(640, 740, 172, 27);
 
         tableClients.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -263,11 +277,18 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tableClients);
 
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(910, 290, 590, 430);
+
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel1.setText("Clientes existentes en la base de datos");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(1030, 250, 360, 25);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CortinasCine.png"))); // NOI18N
         jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(136, -1, 1160, 250);
 
         btnGetBackHome5.setBackground(new java.awt.Color(255, 255, 255));
         btnGetBackHome5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVolver.png"))); // NOI18N
@@ -279,68 +300,30 @@ public class FrmLogOutClient extends javax.swing.JFrame {
                 btnGetBackHome5ActionPerformed(evt);
             }
         });
+        getContentPane().add(btnGetBackHome5);
+        btnGetBackHome5.setBounds(36, 692, 170, 102);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(100, 100, 100)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 1129, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(616, 616, 616))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(174, 174, 174)
-                                .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnGetBackHome5, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(84, 84, 84)
-                                .addComponent(btnAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(218, 218, 218)
-                                .addComponent(btnAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(510, 510, 510)
-                                .addComponent(panelAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(120, 120, 120)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 590, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(374, 374, 374))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1)
-                        .addGap(15, 15, 15)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 430, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(264, 264, 264)
-                        .addComponent(panelAddSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(47, 47, 47)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnGetBackHome5)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(28, 28, 28)
-                                .addComponent(btnAddSeats))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(184, 184, 184)
-                        .addComponent(panelAddClients, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnAddClients)
-                        .addGap(28, 28, 28))))
-        );
+        btnUpdateClient.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnUpdateClient.setText("Actualizar Cliente");
+        btnUpdateClient.setContentAreaFilled(false);
+        btnUpdateClient.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUpdateClientActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnUpdateClient);
+        btnUpdateClient.setBounds(1020, 740, 160, 27);
+
+        btnRemoveClient.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        btnRemoveClient.setText("Eliminar Cliente");
+        btnRemoveClient.setContentAreaFilled(false);
+        btnRemoveClient.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoveClientActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRemoveClient);
+        btnRemoveClient.setBounds(1250, 740, 130, 27);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -406,6 +389,37 @@ public class FrmLogOutClient extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_btnGetBackHome5ActionPerformed
 
+    private void btnUpdateClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateClientActionPerformed
+        if (Validator.isEmpty(txtLogOutClientCC.getText()) && Validator.isEmpty(txtLogOutClientName.getText())
+                && Validator.isEmpty(txtLogOutClientLastName.getText()) && Validator.isEmpty(txtLogOutClientPhone.getText())
+                && Validator.isEmpty(txtLogOutClientAddress.getText()) && Validator.isEmpty(txtLogOutClientEmail.getText())) {
+            JOptionPane.showMessageDialog(this, "Llena todos los campos para actualizar el cliente");
+            return;
+        }
+        boolean confirm = personController.updatePerson(txtLogOutClientCC.getText(), new Person(txtLogOutClientCC.getText(), txtLogOutClientName.getText(), 
+        txtLogOutClientLastName.getText(), txtLogOutClientPhone.getText(), txtLogOutClientAddress.getText(), txtLogOutClientEmail.getText()));
+        if(confirm){
+            System.out.println("se agrego");
+        }else{
+            System.out.println("No se agrego");
+        }
+        showTable();
+    }//GEN-LAST:event_btnUpdateClientActionPerformed
+
+    private void btnRemoveClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoveClientActionPerformed
+        if (Validator.isEmpty(txtLogOutClientCC.getText())) {
+            JOptionPane.showMessageDialog(this, "Llena el campo CC para eliminar el cliente");
+            return;
+        }
+        boolean confirm = personController.deletePerson(txtLogOutClientCC.getText());
+        if(confirm){
+            System.out.println("se agrego");
+        }else{
+            System.out.println("No se agrego");
+        }
+        showTable();
+    }//GEN-LAST:event_btnRemoveClientActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -447,6 +461,8 @@ public class FrmLogOutClient extends javax.swing.JFrame {
     private javax.swing.JButton btnAddSeats;
     private javax.swing.JButton btnGetBackHome5;
     private javax.swing.JButton btnRegisterClient;
+    private javax.swing.JButton btnRemoveClient;
+    private javax.swing.JButton btnUpdateClient;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;

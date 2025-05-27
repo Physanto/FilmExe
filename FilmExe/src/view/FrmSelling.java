@@ -82,15 +82,20 @@ public class FrmSelling extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
         getContentPane().setLayout(null);
 
-        btnSell.setBackground(new java.awt.Color(255, 255, 255));
+        btnSell.setBackground(new java.awt.Color(0, 0, 0));
+        btnSell.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
         btnSell.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVender.png"))); // NOI18N
         btnSell.setText("VENDER");
-        btnSell.setBorder(null);
+        btnSell.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
         btnSell.setContentAreaFilled(false);
         btnSell.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,9 +103,10 @@ public class FrmSelling extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSell);
-        btnSell.setBounds(670, 716, 160, 100);
+        btnSell.setBounds(670, 716, 160, 102);
 
         btnGetBackHome.setBackground(new java.awt.Color(255, 255, 255));
+        btnGetBackHome.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
         btnGetBackHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoBotonVolver.png"))); // NOI18N
         btnGetBackHome.setText("VOLVER");
         btnGetBackHome.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -113,6 +119,7 @@ public class FrmSelling extends javax.swing.JFrame {
         getContentPane().add(btnGetBackHome);
         btnGetBackHome.setBounds(100, 680, 170, 102);
 
+        btnLogOutClient.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
         btnLogOutClient.setText("Registrar Cliente");
         btnLogOutClient.setContentAreaFilled(false);
         btnLogOutClient.addActionListener(new java.awt.event.ActionListener() {
@@ -121,8 +128,10 @@ public class FrmSelling extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnLogOutClient);
-        btnLogOutClient.setBounds(1270, 210, 150, 23);
+        btnLogOutClient.setBounds(1110, 570, 150, 23);
 
+        btnSearchClient.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
+        btnSearchClient.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoLupa.png"))); // NOI18N
         btnSearchClient.setText("Buscar");
         btnSearchClient.setContentAreaFilled(false);
         btnSearchClient.addActionListener(new java.awt.event.ActionListener() {
@@ -131,36 +140,36 @@ public class FrmSelling extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSearchClient);
-        btnSearchClient.setBounds(1310, 339, 72, 23);
+        btnSearchClient.setBounds(1110, 340, 140, 39);
         getContentPane().add(txtClientCCSearching);
-        txtClientCCSearching.setBounds(1257, 299, 189, 22);
+        txtClientCCSearching.setBounds(1100, 300, 189, 22);
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Impact", 2, 18)); // NOI18N
         jLabel7.setText("Ingresa la cedula del cliente");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(1234, 262, 260, 25);
+        jLabel7.setBounds(1080, 270, 260, 23);
 
         jScrollPane1.setViewportView(listSelectedSeats);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(87, 119, 78, 157);
+        jScrollPane1.setBounds(270, 360, 78, 157);
 
-        jLabel8.setFont(new java.awt.Font("CaskaydiaCove NF", 1, 18)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Impact", 2, 18)); // NOI18N
         jLabel8.setText("Asientos Seleccionados");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(30, 83, 216, 24);
+        jLabel8.setBounds(220, 280, 220, 24);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoGrande.png"))); // NOI18N
         jLabel1.setText("jLabel1");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Impact", 2, 18)); // NOI18N
         jLabel2.setText("Silla Solicitada");
 
         txtChairPrice.setEnabled(false);
 
         txtChairName.setEnabled(false);
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Impact", 2, 18)); // NOI18N
         jLabel6.setText("Datos silla solicitada");
 
         jLabel9.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -189,12 +198,6 @@ public class FrmSelling extends javax.swing.JFrame {
                         .addGap(115, 115, 115)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(jLabel6))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(89, 89, 89)
-                        .addComponent(txtChairName, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -216,8 +219,13 @@ public class FrmSelling extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
-                        .addComponent(txtEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(txtEndDate, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(80, 80, 80)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtChairName, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -254,13 +262,13 @@ public class FrmSelling extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(410, 70, 310, 530);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Impact", 2, 18)); // NOI18N
         jLabel3.setText("Datos cliente");
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoPersona.png"))); // NOI18N
         jLabel4.setText("jLabel4");
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Impact", 2, 18)); // NOI18N
         jLabel5.setText("Ingrese los datos del cliente");
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -290,9 +298,6 @@ public class FrmSelling extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(53, 53, 53)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(64, 64, 64)
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -331,6 +336,10 @@ public class FrmSelling extends javax.swing.JFrame {
                                     .addComponent(txtClientPhone, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(0, 44, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(80, 80, 80))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -369,7 +378,25 @@ public class FrmSelling extends javax.swing.JFrame {
         );
 
         getContentPane().add(jPanel2);
-        jPanel2.setBounds(730, 90, 400, 560);
+        jPanel2.setBounds(650, 90, 400, 560);
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
+        getContentPane().add(jLabel19);
+        jLabel19.setBounds(290, 310, 32, 40);
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoPersona.png"))); // NOI18N
+        getContentPane().add(jLabel21);
+        jLabel21.setBounds(1140, 460, 100, 100);
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CortinaLateralIzquierda.png"))); // NOI18N
+        jLabel20.setText("jLabel20");
+        getContentPane().add(jLabel20);
+        jLabel20.setBounds(-90, 0, 370, 910);
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CortinaLateralDerecha.png"))); // NOI18N
+        jLabel22.setText("jLabel22");
+        getContentPane().add(jLabel22);
+        jLabel22.setBounds(1220, -20, 390, 910);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -465,19 +492,19 @@ public class FrmSelling extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Llene el campo con los datos del cliente");
             return;
         }
-		
+
         Person person = searchPerson();
 
-		if(person == null){
-			int option = JOptionPane.showConfirmDialog(this, "Persona no registrada con esa identificacion, ¿Desea registrarlo?");
+        if(person == null){
+            int option = JOptionPane.showConfirmDialog(this, "Persona no registrada con esa identificacion, ¿Desea registrarlo?");
 
             if(option == 0){
-				FrmLogOutClient register = new FrmLogOutClient();
-				register.setVisible(true);
-				this.dispose();
+                FrmLogOutClient register = new FrmLogOutClient();
+                register.setVisible(true);
+                this.dispose();
             }
-			return;
-		}
+            return;
+        }
         txtClientCC.setText(person.getCc());
         txtClientName.setText(person.getName());
         txtClientLastName.setText(person.getLastName());
@@ -542,7 +569,11 @@ public class FrmSelling extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

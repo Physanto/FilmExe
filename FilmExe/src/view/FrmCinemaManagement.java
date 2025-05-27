@@ -88,6 +88,8 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
         btnShowSales = new javax.swing.JButton();
         btnAddSeatsFromHome = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
@@ -383,7 +385,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnSelling);
-        btnSelling.setBounds(1160, 250, 212, 123);
+        btnSelling.setBounds(1070, 660, 212, 123);
 
         btnExit.setBackground(new java.awt.Color(255, 255, 255));
         btnExit.setForeground(new java.awt.Color(0, 0, 0));
@@ -397,7 +399,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnExit);
-        btnExit.setBounds(50, 250, 212, 123);
+        btnExit.setBounds(130, 680, 212, 123);
 
         btn1AChair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoPequeño.png"))); // NOI18N
         btn1AChair.setName("A1"); // NOI18N
@@ -428,7 +430,7 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnShowSales);
-        btnShowSales.setBounds(1160, 60, 212, 123);
+        btnShowSales.setBounds(1060, 490, 212, 123);
 
         btnAddSeatsFromHome.setBackground(new java.awt.Color(255, 255, 255));
         btnAddSeatsFromHome.setForeground(new java.awt.Color(0, 0, 0));
@@ -442,12 +444,20 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnAddSeatsFromHome);
-        btnAddSeatsFromHome.setBounds(40, 80, 250, 120);
+        btnAddSeatsFromHome.setBounds(120, 510, 250, 120);
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Pantalla.png"))); // NOI18N
         jLabel14.setText("jLabel14");
         getContentPane().add(jLabel14);
         jLabel14.setBounds(370, 10, 730, 420);
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CortinaLateralIzquierda.png"))); // NOI18N
+        getContentPane().add(jLabel16);
+        jLabel16.setBounds(-80, -20, 360, 920);
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CortinaLateralDerecha.png"))); // NOI18N
+        getContentPane().add(jLabel17);
+        jLabel17.setBounds(1200, -10, 400, 930);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -561,6 +571,8 @@ public class FrmCinemaManagement extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
