@@ -21,10 +21,13 @@ public class FrmSelling extends javax.swing.JFrame {
 	private SaleController saleController;
 	private int[] idSeats;
 	private SeatSaleController seatSaleController;
+	private Person persons;
+	private Sale sales;
 
     public FrmSelling(ArrayList<String> seatNames) {
 
         initComponents();
+		pnlReceipt.setVisible(false);
         personController = new PersonController();
 		seatController = new SeatController();
 		saleController = new SaleController();
@@ -82,6 +85,23 @@ public class FrmSelling extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
+        pnlReceipt = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jLabel35 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
@@ -133,12 +153,12 @@ public class FrmSelling extends javax.swing.JFrame {
         getContentPane().add(btnSearchClient);
         btnSearchClient.setBounds(1310, 339, 72, 23);
         getContentPane().add(txtClientCCSearching);
-        txtClientCCSearching.setBounds(1257, 299, 189, 22);
+        txtClientCCSearching.setBounds(1257, 299, 189, 23);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel7.setText("Ingresa la cedula del cliente");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(1234, 262, 260, 25);
+        jLabel7.setBounds(1234, 262, 260, 22);
 
         jScrollPane1.setViewportView(listSelectedSeats);
 
@@ -148,7 +168,7 @@ public class FrmSelling extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("CaskaydiaCove NF", 1, 18)); // NOI18N
         jLabel8.setText("Asientos Seleccionados");
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(30, 83, 216, 24);
+        jLabel8.setBounds(30, 83, 242, 22);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoGrande.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -371,6 +391,120 @@ public class FrmSelling extends javax.swing.JFrame {
         getContentPane().add(jPanel2);
         jPanel2.setBounds(730, 90, 400, 560);
 
+        jLabel22.setText("Cliente:");
+
+        jLabel23.setText("jLabel23");
+
+        jLabel24.setText("Cedula");
+
+        jLabel25.setText("jLabel25");
+
+        jLabel26.setText("Email:");
+
+        jLabel27.setText("jLabel27");
+
+        jLabel28.setText("Total");
+
+        jLabel29.setText("Fecha Inicio:");
+
+        jLabel30.setText("jLabel30");
+
+        jLabel31.setText("Fecha Fin:");
+
+        jLabel32.setText("jLabel32");
+
+        jLabel33.setText("jLabel33");
+
+        jLabel34.setText("ASIENTOS COMPRADOS");
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable1);
+
+        jLabel35.setFont(new java.awt.Font("CaskaydiaCove NF", 1, 18)); // NOI18N
+        jLabel35.setText("RECIBO FILMEXE");
+
+        javax.swing.GroupLayout pnlReceiptLayout = new javax.swing.GroupLayout(pnlReceipt);
+        pnlReceipt.setLayout(pnlReceiptLayout);
+        pnlReceiptLayout.setHorizontalGroup(
+            pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlReceiptLayout.createSequentialGroup()
+                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pnlReceiptLayout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel26)
+                            .addGroup(pnlReceiptLayout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel29)
+                                    .addComponent(jLabel24)
+                                    .addComponent(jLabel22)
+                                    .addComponent(jLabel31)
+                                    .addComponent(jLabel28))
+                                .addGap(33, 33, 33)
+                                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel23)
+                                    .addComponent(jLabel25)
+                                    .addComponent(jLabel27)
+                                    .addComponent(jLabel30)
+                                    .addComponent(jLabel32)
+                                    .addComponent(jLabel33)))
+                            .addComponent(jLabel34)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(pnlReceiptLayout.createSequentialGroup()
+                        .addGap(158, 158, 158)
+                        .addComponent(jLabel35)))
+                .addContainerGap(158, Short.MAX_VALUE))
+        );
+        pnlReceiptLayout.setVerticalGroup(
+            pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlReceiptLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addComponent(jLabel35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel22)
+                    .addComponent(jLabel23))
+                .addGap(18, 18, 18)
+                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(jLabel25))
+                .addGap(18, 18, 18)
+                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel26)
+                    .addComponent(jLabel27))
+                .addGap(18, 18, 18)
+                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel29)
+                    .addComponent(jLabel30))
+                .addGap(26, 26, 26)
+                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel31)
+                    .addComponent(jLabel32))
+                .addGap(26, 26, 26)
+                .addGroup(pnlReceiptLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel28)
+                    .addComponent(jLabel33))
+                .addGap(36, 36, 36)
+                .addComponent(jLabel34)
+                .addGap(31, 31, 31)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
+        );
+
+        getContentPane().add(pnlReceipt);
+        pnlReceipt.setBounds(1200, 430, 470, 560);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -423,7 +557,7 @@ public class FrmSelling extends javax.swing.JFrame {
 	}
 
 	private double calculateTotalSaleSeat(){	
-		return searchSeats().get(0).getPrice()- Double.parseDouble(txtChairPrice.getText());
+		return searchSeats().get(0).getPrice()- Double.parseDouble(txtChairDiscount.getText());
 	}	
 
 	private void updateSaleTotal(){
@@ -487,11 +621,13 @@ public class FrmSelling extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSearchClientActionPerformed
 
 	private Person searchPerson(){
-		return personController.searchPerson(txtClientCCSearching.getText());
+		persons = personController.searchPerson(txtClientCCSearching.getText()); 
+		return persons; 
 	}
 
 	private Sale searchSale(){	
-		return saleController.searchSale(searchPerson().getId());
+		sales = saleController.searchSale(searchPerson().getId()); 
+		return sales;
 	}
 
 	private void showSelectedSeats(){
@@ -527,6 +663,16 @@ public class FrmSelling extends javax.swing.JFrame {
 		}
 	}
 
+	private void showReceipt(){
+		jLabel23.setText(persons.getName());
+		jLabel25.setText(persons.getCc());
+		jLabel27.setText(persons.getEmail());
+		jLabel30.setText(sales.getStar_date().toString());
+		jLabel32.setText(sales.getEnd_date().toString());
+		jLabel33.setText(String.valueOf(sales.getTotal()));
+		JOptionPane.showConfirmDialog(this, pnlReceipt);
+	}
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGetBackHome;
     private javax.swing.JButton btnLogOutClient;
@@ -543,7 +689,21 @@ public class FrmSelling extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -553,7 +713,10 @@ public class FrmSelling extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
     private javax.swing.JList<String> listSelectedSeats;
+    private javax.swing.JPanel pnlReceipt;
     private javax.swing.JTextField txtChairDiscount;
     private javax.swing.JTextField txtChairName;
     private javax.swing.JTextField txtChairPrice;
