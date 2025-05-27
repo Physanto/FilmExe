@@ -85,12 +85,10 @@ public class FrmSelling extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-<<<<<<< HEAD
         jLabel19 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
-=======
         pnlReceipt = new javax.swing.JPanel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
@@ -108,8 +106,6 @@ public class FrmSelling extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel35 = new javax.swing.JLabel();
->>>>>>> 8b7f92a051957209b8d858627a88019d08795766
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1920, 1080));
         getContentPane().setLayout(null);
@@ -165,20 +161,14 @@ public class FrmSelling extends javax.swing.JFrame {
         getContentPane().add(btnSearchClient);
         btnSearchClient.setBounds(1110, 340, 140, 39);
         getContentPane().add(txtClientCCSearching);
-<<<<<<< HEAD
         txtClientCCSearching.setBounds(1100, 300, 189, 22);
-=======
         txtClientCCSearching.setBounds(1257, 299, 189, 23);
->>>>>>> 8b7f92a051957209b8d858627a88019d08795766
 
         jLabel7.setFont(new java.awt.Font("Impact", 2, 18)); // NOI18N
         jLabel7.setText("Ingresa la cedula del cliente");
         getContentPane().add(jLabel7);
-<<<<<<< HEAD
         jLabel7.setBounds(1080, 270, 260, 23);
-=======
         jLabel7.setBounds(1234, 262, 260, 22);
->>>>>>> 8b7f92a051957209b8d858627a88019d08795766
 
         jScrollPane1.setViewportView(listSelectedSeats);
 
@@ -188,12 +178,8 @@ public class FrmSelling extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Impact", 2, 18)); // NOI18N
         jLabel8.setText("Asientos Seleccionados");
         getContentPane().add(jLabel8);
-<<<<<<< HEAD
         jLabel8.setBounds(220, 280, 220, 24);
-=======
         jLabel8.setBounds(30, 83, 242, 22);
->>>>>>> 8b7f92a051957209b8d858627a88019d08795766
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/IconoAsientoGrande.png"))); // NOI18N
         jLabel1.setText("jLabel1");
 
